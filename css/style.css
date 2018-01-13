@@ -1,0 +1,168 @@
+#ban {
+  height: 75px;
+  background-color: #444444;
+}
+
+body {
+  background-color: #070707;
+}
+
+#logo {
+  height: 75px;
+  width: 75px;
+  float: left;
+}
+
+#titre {
+  margin-left: 20px;
+  font-family: impact;
+  font-size: 30px;
+  margin-top: 10px;
+  float: left;
+}
+
+.header-left-side {
+  display: inline-block;
+}
+
+.header-right-side {
+  float: right;
+  padding-right: 50px;
+}
+
+.header-link {
+  display: inline-block;
+  font-size: 25px;
+  font-family: impact;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
+  color: black;
+  padding: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.header-link:hover {
+  color: white;
+  background-color: #2E2E2E;
+  border-radius: 20px;
+}
+
+#logos {
+  height: 80px;
+  width: 80px;
+  border-radius: 50px;
+  position: absolute;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  -webkit-transition: all 0.75s;
+  transition: all 0.75s;
+  margin-right: 10px;
+}
+
+#logos:hover {
+  height: 85px;
+  width: 85px;
+  border-radius: 30px;
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  -webkit-transition: all 0.75s;
+  transition: all 0.75s;
+}
+
+#logos1 {
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  border-radius: 50px;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  -webkit-transition: all 0.75s;
+  transition: all 0.25s;
+  margin-right: 10px;
+}
+
+#logos1:hover {
+  height: 85px;
+  width: 85px;
+  border-radius: 30px;
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  -webkit-transition: all 0.25s;
+  transition: all 0.75s;
+}
+
+.stream-zone {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 50px;
+  width: 1328px;
+}
+
+.stream-zone a {
+  color: transparent;
+}
+
+.container-logo div {
+  display: inline-block;
+  position: relative;
+  height: 80px;
+  width: 80px;
+  margin-right: 10px;
+}
+
+/* On Air icons */
+#icon_online_alkor, #icon_online_nerdraxx, #icon_online_hyoshee, #icon_online_johnyytb, #icon_online_frokan, #icon_online_streamerzone {
+  height: 20px;
+  width: 20px;
+  background-color: red;
+  opacity: 0.5;
+  border-radius: 10px;
+  top: 0;
+  right: 0;
+  position: absolute;
+  display: none;
+  margin-right: 0px;
+}
+
+/*SITE PARTENAIRES*/
+
+#partnert {
+  color: white;
+  font-size: 35px;
+  margin-left: 50px;
+  font-family: script;
+  color: white;
+}
+
+#partnera {
+  color: white;
+  font-size: 35px;
+  font-family: script;
+  color: white;
+}
+
+#partneri {
+  margin-left: 100px;
+  border-radius: 20px;
+  box-shadow: 8px 8px 0px #444444;
+}
+
+#partneri:hover {
+  margin-left: 100px;
+  border-radius: 20px;
+}
