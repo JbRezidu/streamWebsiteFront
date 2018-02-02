@@ -166,3 +166,50 @@ body {
   margin-left: 100px;
   border-radius: 20px;
 }
+
+
+/*Page Contact*/
+
+/*Bouton n*1 */
+
+#Recutements {
+	color: white; background-color: #DF7401; border-color: black; border-size: 1px;
+	border-radius: 30px; width: 600px; height: 50px;
+	font-size: 20px; font-family: impact; font-style: bold; border-font: 1px solid black;
+}
+
+#Recutements:hover {
+	color: black; background-color: #FE9A2E; border-color: #0174DF; border-size: 1px;
+	border-radius: 30px; width: 600px; height: 50px;
+	font-size: 20px; font-family: impact; font-style: bold; border-font: 1px solid black;
+}
+
+
+/*Bouton n*2 */
+
+#Recutements1 {
+	color: white; background-color: #0174DF; border-color: black; border-size: 1px;
+	border-radius: 30px; width: 600px; height: 50px;
+	font-size: 20px; font-family: impact; font-style: bold; border-font: 1px solid black;
+}
+
+#Recutements1:hover {
+	color: black; background-color: #2E9AFE; border-color: #FE9A2E; border-size: 1px;
+	border-radius: 30px; width: 600px; height: 50px;
+	font-size: 20px; font-family: impact; font-style: bold; border-font: 1px solid black;
+}
+
+
+/*Bouton n*3 */
+
+#Recutements2 {
+	color: white; background-color: #DF7401; border-color: black; border-size: 1px;
+	border-radius: 30px; width: 600px; height: 50px;
+	font-size: 20px; font-family: impact; font-style: bold; border-font: 1px solid black;
+}
+
+#Recutements2:hover {
+	color: black; background-color: #FE9A2E; border-color: #0174DF; border-size: 1px;
+	border-radius: 30px; width: 600px; height: 50px;
+	font-size: 20px; font-family: impact; font-style: bold; border-font: 1px solid black;
+}
