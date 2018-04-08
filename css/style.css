@@ -1,10 +1,10 @@
 #ban {
   height: 75px;
-  background-color: #444444;
+  background-image: radial-gradient(ellipse at center, #6F0203, black);
 }
 
 body {
-  background-color: #070707;
+ background-image: radial-gradient(ellipse at center, #100000, black);
 }
 
 #logo {
@@ -46,7 +46,7 @@ body {
 
 .header-link:hover {
   color: white;
-  background-color: #2E2E2E;
+  background-color: white;
   border-radius: 20px;
 }
 
