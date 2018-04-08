@@ -45,8 +45,8 @@ body {
 }
 
 .header-link:hover {
-  color: white;
-  background-color: #585858;
+  color: #585858;
+  background-color: white;
   border-radius: 20px;
 }
 
