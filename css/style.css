@@ -19,6 +19,7 @@ body {
   font-size: 30px;
   margin-top: 10px;
   float: left;
+  text-shadow: #FFFFFF 1px 1px, #FFFFFF -1px 1px, #FFFFFF -1px -1px, #FFFFFF 1px -1px;
 }
 
 .header-left-side {
@@ -42,12 +43,13 @@ body {
   padding: 5px;
   text-decoration: none;
   cursor: pointer;
+	text-shadow: #FFFFFF 1px 1px, #FFFFFF -1px 1px, #FFFFFF -1px -1px, #FFFFFF 1px -1px;
 }
 
 .header-link:hover {
   color: white;
-  background-color: black;
   border-radius: 20px;
+  text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
 }
 
 #logos {
@@ -126,7 +128,7 @@ body {
 }
 
 /* On Air icons */
-#icon_online_alkor, #icon_online_stay, #icon_online_hyoshee, #icon_online_johnyytb, #icon_online_frokan, #icon_online_ral, #icon_online_voll, #icon_online_streamerzone {
+#icon_online_alkor, #icon_online_stay, #icon_online_hyoshee, #icon_online_whyz, #icon_online_frokan, #icon_online_law, #icon_online_unic, #icon_online_streamerzone, #icon_online_crazy {
   height: 20px;
   width: 20px;
   background-color: red;

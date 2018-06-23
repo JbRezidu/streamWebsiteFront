@@ -142,11 +142,135 @@ var setIntervalStreamStatusStreamerZone = function () {
   setInterval(getStreamStatusJohnyytb, 60000);
 };
 
+var getStreamStatusUnicxorn = function () {
+  $.ajax({
+    url: 'https://api.twitch.tv/helix/streams?user_id=116943607',
+    type: 'GET',
+    headers: {
+     'Client-ID': 'b649omcgoo7t8sak644ivy7z3stzfn'
+    },
+    success: function(result) {
+      if (result.data.length > 0) {
+        // display icon on air
+        $("#icon_online_unic").css('display', 'block');
+      } else {
+        // hide icon on air
+        $("#icon_online_unic").css('display', 'none');
+      }
+    }
+  })
+}
+
+var setIntervalStreamStatusUnicxorn = function () {
+  getStreamStatusUnicxorn();
+  setInterval(getStreamStatusUnicxorn, 60000);
+};
+
+var getStreamStatusStayHighTV_ = function () {
+  $.ajax({
+    url: 'https://api.twitch.tv/helix/streams?user_id=192213708',
+    type: 'GET',
+    headers: {
+     'Client-ID': 'b649omcgoo7t8sak644ivy7z3stzfn'
+    },
+    success: function(result) {
+      if (result.data.length > 0) {
+        // display icon on air
+        $("#icon_online_stay").css('display', 'block');
+      } else {
+        // hide icon on air
+        $("#icon_online_stay").css('display', 'none');
+      }
+    }
+  })
+}
+
+var setIntervalStreamStatusStayHighTV_ = function () {
+  getStreamStatusStayHighTV_();
+  setInterval(getStreamStatusStayHighTV_, 60000);
+};
+
+var getStreamStatusIaw300 = function () {
+  $.ajax({
+    url: 'https://api.twitch.tv/helix/streams?user_id=83082142',
+    type: 'GET',
+    headers: {
+     'Client-ID': 'b649omcgoo7t8sak644ivy7z3stzfn'
+    },
+    success: function(result) {
+      if (result.data.length > 0) {
+        // display icon on air
+        $("#icon_online_law").css('display', 'block');
+      } else {
+        // hide icon on air
+        $("#icon_online_law").css('display', 'none');
+      }
+    }
+  })
+}
+
+var setIntervalStreamStatusIaw300 = function () {
+  getStreamStatusIaw300();
+  setInterval(getStreamStatusIaw300, 60000);
+};
+
+var getStreamStatusWhyz_Trap = function () {
+  $.ajax({
+    url: 'https://api.twitch.tv/helix/streams?user_id=114145196',
+    type: 'GET',
+    headers: {
+     'Client-ID': 'b649omcgoo7t8sak644ivy7z3stzfn'
+    },
+    success: function(result) {
+      if (result.data.length > 0) {
+        // display icon on air
+        $("#icon_online_whyz").css('display', 'block');
+      } else {
+        // hide icon on air
+        $("#icon_online_whyz").css('display', 'none');
+      }
+    }
+  })
+}
+
+var setIntervalStreamStatusWhyz_Trap = function () {
+  getStreamStatusWhyz_Trap();
+  setInterval(getStreamStatusWhyz_Trap, 60000);
+};
+
+var getStreamStatusCrazyNightTv = function () {
+  $.ajax({
+    url: 'https://api.twitch.tv/helix/streams?user_id=41792769',
+    type: 'GET',
+    headers: {
+     'Client-ID': 'b649omcgoo7t8sak644ivy7z3stzfn'
+    },
+    success: function(result) {
+      if (result.data.length > 0) {
+        // display icon on air
+        $("#icon_online_crazy").css('display', 'block');
+      } else {
+        // hide icon on air
+        $("#icon_online_crazy").css('display', 'none');
+      }
+    }
+  })
+}
+
+var setIntervalStreamStatusCrazyNightTv = function () {
+  getStreamStatusCrazyNightTv();
+  setInterval(getStreamStatusCrazyNightTv, 60000);
+};
+
 $(document).ready(function () {
   setIntervalStreamStatusAlkor();
   setIntervalStreamStatusFrokan();
   setIntervalStreamStatusNmixslash();
   setIntervalStreamStatusHyoshee();
-  setIntervalStreamStatusJohnyytb();
+  setIntervalStreamStatusWhyz_Trap();
   setIntervalStreamStatusStreamerZone();
+  setIntervalStreamStatusUnicxorn();
+  setIntervalStreamStatusStayHighTV_();
+  setIntervalStreamStatusIaw300();
+  setIntervalStreamStatusCrazyNightTv();
 });
