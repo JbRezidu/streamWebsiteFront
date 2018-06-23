@@ -118,7 +118,7 @@ var setIntervalStreamStatusJohnyytb = function () {
   setInterval(getStreamStatusJohnyytb, 60000);
 };
 
-var getStreamStatusStreamerZone = function () {
+var getStreamStatusLeBistroDesGamers = function () {
   $.ajax({
     url: 'https://api.twitch.tv/helix/streams?user_id=180986726',
     type: 'GET',
@@ -137,9 +137,9 @@ var getStreamStatusStreamerZone = function () {
   })
 }
 
-var setIntervalStreamStatusStreamerZone = function () {
-  getStreamStatusStreamerZone();
-  setInterval(getStreamStatusJohnyytb, 60000);
+var setIntervalStreamStatusLeBistroDesGamers = function () {
+  getStreamStatusLeBistroDesGamers();
+  setInterval(getStreamStatusLeBistroDesGamers, 60000);
 };
 
 var getStreamStatusUnicxorn = function () {
@@ -268,7 +268,7 @@ $(document).ready(function () {
   setIntervalStreamStatusNmixslash();
   setIntervalStreamStatusHyoshee();
   setIntervalStreamStatusWhyz_Trap();
-  setIntervalStreamStatusStreamerZone();
+  setIntervalStreamStatusLeBistroDesGamers();
   setIntervalStreamStatusUnicxorn();
   setIntervalStreamStatusStayHighTV_();
   setIntervalStreamStatusIaw300();
