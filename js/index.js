@@ -118,7 +118,7 @@ var setIntervalStreamStatusJohnyytb = function () {
   setInterval(getStreamStatusJohnyytb, 60000);
 };
 
-var getStreamStatusLeBistroDesGamers = function () {
+var getStreamStatusStreamerZone = function () {
   $.ajax({
     url: 'https://api.twitch.tv/helix/streams?user_id=180986726',
     type: 'GET',
@@ -137,9 +137,9 @@ var getStreamStatusLeBistroDesGamers = function () {
   })
 }
 
-var setIntervalStreamStatusLeBistroDesGamers = function () {
-  getStreamStatusLeBistroDesGamers();
-  setInterval(getStreamStatusLeBistroDesGamers, 60000);
+var setIntervalStreamStatusStreamerZone = function () {
+  getStreamStatusStreamerZone();
+  setInterval(getStreamStatusJohnyytb, 60000);
 };
 
 var getStreamStatusUnicxorn = function () {
@@ -262,15 +262,40 @@ var setIntervalStreamStatusCrazyNightTv = function () {
   setInterval(getStreamStatusCrazyNightTv, 60000);
 };
 
+var getStreamStatusNiknicooo = function () {
+  $.ajax({
+    url: 'https://api.twitch.tv/helix/streams?user_id=47863842',
+    type: 'GET',
+    headers: {
+     'Client-ID': 'b649omcgoo7t8sak644ivy7z3stzfn'
+    },
+    success: function(result) {
+      if (result.data.length > 0) {
+        // display icon on air
+        $("#icon_online_glanik").css('display', 'block');
+      } else {
+        // hide icon on air
+        $("#icon_online_glanik").css('display', 'none');
+      }
+    }
+  })
+}
+
+var setIntervalStreamStatusNiknicooo = function () {
+  getStreamStatusNiknicooo();
+  setInterval(getStreamStatusNiknicooo, 60000);
+};
+
 $(document).ready(function () {
   setIntervalStreamStatusAlkor();
   setIntervalStreamStatusFrokan();
   setIntervalStreamStatusNmixslash();
   setIntervalStreamStatusHyoshee();
   setIntervalStreamStatusWhyz_Trap();
-  setIntervalStreamStatusLeBistroDesGamers();
+  setIntervalStreamStatusStreamerZone();
   setIntervalStreamStatusUnicxorn();
   setIntervalStreamStatusStayHighTV_();
   setIntervalStreamStatusIaw300();
   setIntervalStreamStatusCrazyNightTv();
+  setIntervalStreamStatusNiknicooo();
 });
