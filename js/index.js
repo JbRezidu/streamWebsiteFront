@@ -286,6 +286,29 @@ var setIntervalStreamStatusNiknicooo = function () {
   setInterval(getStreamStatusNiknicooo, 60000);
 };
 
+var getStreamStatusGeneraleweexi = function () {
+  $.ajax({
+    url: 'https://api.twitch.tv/helix/streams?user_id=232995574',
+    type: 'GET',
+    headers: {
+     'Client-ID': 'b649omcgoo7t8sak644ivy7z3stzfn'
+    },
+    success: function(result) {
+      if (result.data.length > 0) {
+        // display icon on air
+        $("#icon_online_weexi").css('display', 'block');
+      } else {
+        // hide icon on air
+        $("#icon_online_weexi").css('display', 'none');
+      }
+    }
+  })
+}
+
+var setIntervalStreamStatusGeneraleweexi = function () {
+  getStreamStatusGeneraleweexi();
+  setInterval(getStreamStatusGeneraleweexi, 60000);
+};
 $(document).ready(function () {
   setIntervalStreamStatusAlkor();
   setIntervalStreamStatusFrokan();
@@ -298,4 +321,5 @@ $(document).ready(function () {
   setIntervalStreamStatusIaw300();
   setIntervalStreamStatusCrazyNightTv();
   setIntervalStreamStatusNiknicooo();
+  setIntervalStreamStatusGeneraleweexi();
 });
