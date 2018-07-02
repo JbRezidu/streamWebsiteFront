@@ -309,6 +309,32 @@ var setIntervalStreamStatusGeneraleweexi = function () {
   getStreamStatusGeneraleweexi();
   setInterval(getStreamStatusGeneraleweexi, 60000);
 };
+
+var getStreamStatusShaniah33 = function () {
+  $.ajax({
+    url: 'https://api.twitch.tv/helix/streams?user_id=193227142',
+    type: 'GET',
+    headers: {
+     'Client-ID': 'b649omcgoo7t8sak644ivy7z3stzfn'
+    },
+    success: function(result) {
+      if (result.data.length > 0) {
+        // display icon on air
+        $("#icon_online_sha").css('display', 'block');
+      } else {
+        // hide icon on air
+        $("#icon_online_sha").css('display', 'none');
+      }
+    }
+  })
+}
+
+var setIntervalStreamStatusShaniah33 = function () {
+  getStreamStatusGeneraleweexi();
+  setInterval(getStreamStatusShaniah33, 60000);
+};
+
+
 $(document).ready(function () {
   setIntervalStreamStatusAlkor();
   setIntervalStreamStatusFrokan();
@@ -322,4 +348,5 @@ $(document).ready(function () {
   setIntervalStreamStatusCrazyNightTv();
   setIntervalStreamStatusNiknicooo();
   setIntervalStreamStatusGeneraleweexi();
+  setIntervalStreamStatusShaniah33();
 });
