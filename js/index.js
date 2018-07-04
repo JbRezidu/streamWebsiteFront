@@ -330,7 +330,7 @@ var getStreamStatusShaniah33 = function () {
 }
 
 var setIntervalStreamStatusShaniah33 = function () {
-  getStreamStatusGeneraleweexi();
+  getStreamStatusShaniah33();
   setInterval(getStreamStatusShaniah33, 60000);
 };
 
@@ -350,3 +350,29 @@ $(document).ready(function () {
   setIntervalStreamStatusGeneraleweexi();
   setIntervalStreamStatusShaniah33();
 });
+
+var getStreamStatusLebdg = function () {
+  $.ajax({
+    url: 'https://api.twitch.tv/helix/streams?user_id=180986726',
+    type: 'GET',
+    headers: {
+     'Client-ID': 'b649omcgoo7t8sak644ivy7z3stzfn'
+    },
+    success: function(result) {
+      if (result.data.length > 0) {
+        // display icon on air
+         <iframe id="lecteur" class="lectwitch" src="https://player.twitch.tv/?channel=lebistrodesgamers" frameborder="0" allowfullscreen="true" scrolling="no"
+      height="500" width="750"></iframe>
+      } else {
+        // hide icon on air
+        $("#icon_online_streamerzone").css('display', 'none');
+      }
+    }
+  })
+}
+
+var setIntervalStreamStatusStreamerZone = function () {
+  getStreamStatusStreamerZone();
+  setInterval(getStreamStatusJohnyytb, 60000);
+};
+
