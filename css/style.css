@@ -133,6 +133,7 @@ body {
   width: 20px;
   background-color: red;
   border-radius: 10px;
+  opacity: 0.5;
   top: 0;
   right: 0;
   position: absolute;
