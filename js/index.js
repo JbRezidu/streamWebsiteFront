@@ -139,7 +139,7 @@ var getStreamStatusStreamerZone = function () {
 
 var setIntervalStreamStatusStreamerZone = function () {
   getStreamStatusStreamerZone();
-  setInterval(getStreamStatusJohnyytb, 60000);
+  setInterval(getStreamStatusStreamerZone, 60000);
 };
 
 var getStreamStatusUnicxorn = function () {
@@ -351,28 +351,52 @@ $(document).ready(function () {
   setIntervalStreamStatusShaniah33();
 });
 
-var getStreamStatusLebdg = function () {
-  $.ajax({
-    url: 'https://api.twitch.tv/helix/streams?user_id=180986726',
-    type: 'GET',
-    headers: {
-     'Client-ID': 'b649omcgoo7t8sak644ivy7z3stzfn'
-    },
-    success: function(result) {
-      if (result.data.length > 0) {
-        // display icon on air
-         <iframe id="lecteur" class="lectwitch" src="https://player.twitch.tv/?channel=lebistrodesgamers" frameborder="0" allowfullscreen="true" scrolling="no"
-      height="500" width="750"></iframe>
-      } else {
-        // hide icon on air
-        $("#icon_online_streamerzone").css('display', 'none');
-      }
-    }
-  })
+//Mode théatre add !
+
+var tex = document.getElementById("lecteur1", "chat", "bouton", "bouton1", "logos2");
+
+function buton1() {
+	bouton1.style.position = 'absolute';
+	bouton1.style.top = '880px';
+	bouton.style.display = "none";
+	bouton1.style.display = "block";
+	chat.style.position = 'absolute';
+	chat.style.left = '1545px';
+	chat.style.top = '5px';
+	chat.style.width = '365px';
+	chat.style.height = '864px';
+	
 }
 
-var setIntervalStreamStatusStreamerZone = function () {
-  getStreamStatusStreamerZone();
-  setInterval(getStreamStatusJohnyytb, 60000);
-};
+function lecteur() {
+	logos2.style.display = "none";
+	lecteur1.style.height = '864px';
+	lecteur1.style.width = '1536px';
+	lecteur1.style.top = '5px';
+	lecteur1.style.left = '5px';
+	lecteur1.style.position = 'absolute';
+	buton1();
+	cheng();
+}
 
+function lecteurleave() {
+	lecteur1.style.height = '500px';
+	lecteur1.style.width = '750px';
+	lecteur1.style.position = 'static';
+	chat.style.position = 'static';
+	chat.style.width = '350px';
+	chat.style.height = '500px';
+	bouton1.style.position = 'static';
+	bouton1.style.display = "none";
+	bouton.style.display = "block";
+	logos2.style.display = "block";
+	chang();
+}
+
+function cheng(text) {
+	document.getElementById("bouton1").innerHTML = '<button id="cine"><img src="./images/theatre.png"/>Quitter le mode théatre</button>';
+}
+
+function chang(text) {
+	document.getElementById("bouton1").innerHTML = '';
+}

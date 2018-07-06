@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<head>
+<head onload="bouton.style.display = 'none';">
   <title>Le Bistro Des Gamers - Accueil</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <meta charset="utf-8">
@@ -37,22 +37,24 @@
   <br>
   <br>
   <div class="stream-zone">
-    <iframe id="lecteur" src="https://player.twitch.tv/?channel=lebistrodesgamers" frameborder="0" allowfullscreen="true" scrolling="no"
+    <iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=lebistrodesgamers" frameborder="0" allowfullscreen="true" scrolling="no"
       height="500" width="750"></iframe>
     <iframe id="chat" src="https://www.twitch.tv/embed/lebistrodesgamers/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe>
     <a class="twitter-timeline" data-width="220" data-height="500" data-theme="dark" href="https://twitter.com/lebdgfr">à l'actu !</a>
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     <br/>
+	<div id="bouton" style="position: static; color: white; font-family: impact;" onclick="lecteur();" ><button id="cine" align="center"><img src="./images/theatre.png" style="position: relative;"></img>Mode théatre</button></div>
+	<div id="bouton1" style="color: white; font-family: impact;" onclick="lecteurleave()"></div>
     <br/>
-    <div class="container-logo">
+    <div class="container-logo" id="logos2">
       <div>
-        <a href="https://www.twitch.tv/lebistrodesgamers" target=_Blank title="StreamerZone &#9731;">
-          <img src="images/bdglogofond.png" id="logos" />
+        <a href="https://www.twitch.tv/lebistrodesgamers" target=_Blank title="Le bdg &#9731;">
+          <img src="images/bdglogofond.png" id="logos"/>
           <div id="icon_online_streamerzone"></div>
         </a>
       </div>
       <div>
-        <a href="https://www.twitch.tv/frokans" target=_Blank title="FroKaN">
+        <a href="frokan.html" title="FroKaN">
           <img src="images/frokanyt.jpg" id="logos1" />
           <div id="icon_online_frokan"></div>
         </a>
@@ -120,7 +122,7 @@
       </div>
 	  <div>
         <a href="https://www.twitch.tv/shaniah33" target=_Blank title="Shaniah">
-          <img src="images/sha.jpg" id="logos1" />
+          <img src="images/Sha.jpg" id="logos1" />
           <div id="icon_online_sha"></div>
         </a>
       </div>

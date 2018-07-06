@@ -93,6 +93,7 @@ body {
   -webkit-transition: all 0.75s;
   transition: all 0.25s;
   margin-right: 10px;
+  display: inline-block;
 }
 
 #logos1:hover {
@@ -221,9 +222,12 @@ body {
 	font-size: 20px; font-family: impact; font-style: bold; border-font: 1px solid black;
 }
 
-/* bienvenu */
+/* Mode cinéma */
 
-#Bienvnu {
-	color: #FFFFFF;
-	font-style: bold;
+#cine, #cinestop {
+	background-image: radial-gradient(ellipse at center, #100000, black);
+	border-radius: 30px; 
+	text-align: center;
+	-webkit-transition: all 0.25s;
+	transition: all 0.75s; color: white;
 }
