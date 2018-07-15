@@ -44,6 +44,7 @@ body {
   text-decoration: none;
   cursor: pointer;
 	text-shadow: #FFFFFF 1px 1px, #FFFFFF -1px 1px, #FFFFFF -1px -1px, #FFFFFF 1px -1px;
+  transition: all 0.50s;
 }
 
 .header-link:hover {
@@ -76,8 +77,8 @@ body {
   -moz-filter: grayscale(0%);
   -ms-filter: grayscale(0%);
   -o-filter: grayscale(0%);
-  -webkit-transition: all 0.75s;
-  transition: all 0.75s;
+  -webkit-transition: all 1.0s;
+  transition: all 1.0s;
 }
 
 #logos1 {
@@ -229,5 +230,10 @@ body {
 	border-radius: 30px; 
 	text-align: center;
 	-webkit-transition: all 0.25s;
-	transition: all 0.75s; color: white;
+	transition-duration: 1s; color: white;
+}
+
+
+#lecteur1, #chat {
+  transition-duration: 0.75s;
 }
