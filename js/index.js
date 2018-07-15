@@ -353,30 +353,32 @@ $(document).ready(function () {
 
 //Mode théatre add !
 
-var tex = document.getElementById("lecteur1", "chat", "bouton", "bouton1", "logos2");
+var tex = document.getElementById("lecteur1", "chat", "bouton", "bouton1", "logos2", "hug");
 
-function buton1() {
+function buton1() {  
 	bouton1.style.position = 'absolute';
-	bouton1.style.top = '880px';
+	bouton1.style.top = '46vw';
 	bouton.style.display = "none";
 	bouton1.style.display = "block";
 	chat.style.position = 'absolute';
-	chat.style.left = '1545px';
+	chat.style.left = '79.6vw';
 	chat.style.top = '5px';
 	chat.style.width = '365px';
 	chat.style.height = '864px';
-	
+  chat.style.width = '19vw';
+  chat.style.height = '45vw';
 }
 
 function lecteur() {
 	logos2.style.display = "none";
-	lecteur1.style.height = '864px';
-	lecteur1.style.width = '1536px';
+  lecteur1.style.width = '80vw';
+  lecteur1.style.height = '45vw';
 	lecteur1.style.top = '5px';
-	lecteur1.style.left = '5px';
-	lecteur1.style.position = 'absolute';
+	lecteur1.style.left = '0vw';
+	lecteur1.style.position = 'absolute'; 
 	buton1();
 	cheng();
+  twit();
 }
 
 function lecteurleave() {
@@ -391,6 +393,7 @@ function lecteurleave() {
 	bouton.style.display = "block";
 	logos2.style.display = "block";
 	chang();
+  notwit();
 }
 
 function cheng(text) {

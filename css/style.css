@@ -5,6 +5,7 @@
 
 body {
  background-image: radial-gradient(ellipse at center, #100000, black);
+ margin: auto;
 }
 
 #logo {
@@ -234,6 +235,6 @@ body {
 }
 
 
-#lecteur1, #chat {
+#lecteur1, #chat, #bouton1, #bouton, #hug {
   transition-duration: 0.75s;
 }
