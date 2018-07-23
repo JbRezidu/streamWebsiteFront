@@ -10,41 +10,47 @@
   <script src="./js/index.js"></script>
 </head>
 
-<body>
+<body id="body">
   <div id="ban">
     <div class="header-left-side">
       <img id="logo" src="images/bdglogo.png" />
       <div id="titre">Le Bistro Des Gamers &#x1F37A;</div>
     </div>
     <div class="header-right-side">
-      <a class="header-link" href="index.html">
+      <a class="header-link" href="#">
 	  Accueil
 	  </a>
-      <a class="header-link" href="cont.html">
+      <a class="header-link" onclick="contact()">
         Contact
       </a>
-      <a class="header-link" href="partners.html">
+      <a class="header-link" onclick="partners()">
         Partenaires
       </a>
-      <a class="header-link" href="https://discord.gg/qchzRDq" target="_Blank">
+      <a class="header-link" onclick="discord()" target="_Blank">
         Discord
       </a>
-      <a class="header-link" href="planning.html">
-        Planning
+      <a class="header-link" onclick="planning()">
+        Graphistes
       </a>
     </div>
   </div>
-  <br>
-  <br>
+  <div id="plann"></div>
   <div class="stream-zone">
-    <div id="lediv"> <iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=lebistrodesgamers" frameborder="0" allowfullscreen="true" scrolling="no"
-      height="500" width="750"></iframe> 
+    <div id="lediv">
+    <iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=lebistrodesgamers" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> 
     <iframe id="chat" src="https://www.twitch.tv/embed/lebistrodesgamers/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe>
-    <a class="twitter-timeline" data-width="220" data-height="500" data-theme="dark" href="https://twitter.com/lebdgfr">à l'actu !</a>
-    <!--<script id="hug1" async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>--></div>
-    <br/>
-	<div id="bouton" style="position: static; color: white; font-family: impact;" onclick="lecteur();" ><button id="cine" align="center"><img src="./images/theatre.png" style="position: relative;"></img>Mode théatre</button></div>
-	<div id="bouton1" style="color: white; font-family: impact;" onclick="lecteurleave()"></div>
+   <div id="right" >
+    <a href="http://twitch.tv/lebistrodesgamers" target="_Blank" ><img id="pan" src="./images/panneautest.png"/></a>
+    <a href="https://www.tipeeestream.com/lebistrodesgamers/donation" target="_Blank" ><img id="pan1" src="./images/panneaudon.png"></img></a>
+    <a href="https://twitter.com/lebdgfr" target="_Blank" ><img id="pan21" src="./images/panneautwit.png"></img></a>
+    <a href="https://www.youtube.com/channel/UC2eTay6Yee--xfBzfOD2rhw" target="_Blank" ><img id="pan12" src="./images/panneauyt.png"></img></a>
+    <a onclick="plan()" target="_Blank" ><img id="pan22" src="./images/panneauplan.png"></img></a>
+    <a id="bouton" onclick="lecteur()" onclick="plan()" target="_Blank" ><img id="pan13" src="./images/panneauthe.png"></img></a>
+  
+   </div>
+  </div>
+  <div id="bouton1" style="color: white; font-family: impact;" onclick="lecteurleave();"></div>
+  <div id="butquit" style="color: white; font-family: impact;" onclick="lecteurleave();"></div>
     <br/>
     <div class="container-logo" id="logos2">
       <div>

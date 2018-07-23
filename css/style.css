@@ -1,30 +1,31 @@
 #ban {
-  height: 75px;
-  background-image: radial-gradient(ellipse at center, #6F0203, black);
-}
+  height: 3.907vw;
+  background-image: radial-gradient(ellipse at left, #983737, #983737);
+  box-shadow: 2px, 2px black;
+  }
 
 body {
- background-image: radial-gradient(ellipse at center, #100000, black);
+ background-image: radial-gradient(ellipse at center, #bfbfbf, #f2f2f2);
  margin: auto;
 }
 
 #logo {
-  height: 75px;
-  width: 75px;
+  height: 3.907vw;
+  width: 3.907vw;
   float: left;
 }
 
 #titre {
-  margin-left: 20px;
+  margin-left: 0.261vw;
   font-family: impact;
   font-size: 30px;
-  margin-top: 10px;
+  margin-top: 0.95vw;
   float: left;
-  text-shadow: #FFFFFF 1px 1px, #FFFFFF -1px 1px, #FFFFFF -1px -1px, #FFFFFF 1px -1px;
 }
 
 .header-left-side {
   display: inline-block;
+  color: white;
 }
 
 .header-right-side {
@@ -36,7 +37,7 @@ body {
   display: inline-block;
   font-size: 25px;
   font-family: impact;
-  margin-top: 15px;
+  margin-top: 0.782vw;
   margin-bottom: 10px;
   margin-right: 5px;
   margin-left: 5px;
@@ -44,19 +45,25 @@ body {
   padding: 5px;
   text-decoration: none;
   cursor: pointer;
-	text-shadow: #FFFFFF 1px 1px, #FFFFFF -1px 1px, #FFFFFF -1px -1px, #FFFFFF 1px -1px;
-  transition: all 0.50s;
+  color: white;
+  transition: background 0.5s;
 }
 
 .header-link:hover {
   color: white;
-  border-radius: 20px;
-  text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+  background: #812e2e radial-gradient(circle, transparent 1%, #983737 1%) center/15000%;
+  transition-duration: 0.5s;
+}
+
+.header-link:active{
+  background-color: #883030;
+  background-size: 100%;
+  transition: background 0s;
 }
 
 #logos {
-  height: 80px;
-  width: 80px;
+  height: 4.2vw;
+  width: 4.2vw;
   border-radius: 50px;
   position: absolute;
   filter: grayscale(100%);
@@ -70,8 +77,8 @@ body {
 }
 
 #logos:hover {
-  height: 85px;
-  width: 85px;
+  height: 4.3vw;
+  width: 4.3vw;
   border-radius: 30px;
   filter: grayscale(0%);
   -webkit-filter: grayscale(0%);
@@ -83,8 +90,8 @@ body {
 }
 
 #logos1 {
-  height: 80px;
-  width: 80px;
+  height: 4.2vw;
+  width: 4.2vw;
   position: absolute;
   border-radius: 50px;
   filter: grayscale(100%);
@@ -99,9 +106,10 @@ body {
 }
 
 #logos1:hover {
-  height: 85px;
-  width: 85px;
+  height: 4.3vw;
+  width: 4.3vw;
   border-radius: 30px;
+  border-width: 2px; border-color: white;
   filter: grayscale(0%);
   -webkit-filter: grayscale(0%);
   -moz-filter: grayscale(0%);
@@ -113,8 +121,8 @@ body {
 
 .stream-zone {
   margin-right: auto;
-  margin-left: auto;
-  margin-top: 50px;
+  margin-left: 15.45vw;
+  margin-top: 4.6vw;
   width: 1328px;
 }
 
@@ -125,9 +133,13 @@ body {
 .container-logo div {
   display: inline-block;
   position: relative;
-  height: 80px;
-  width: 80px;
-  margin-right: 10px;
+  height: 4.3vw;
+  width: 4.3vw;
+  margin-right: 0.5vw;
+}
+
+.container-logo {
+  height: 8.8vw; width: 57.6vw;
 }
 
 /* On Air icons */
@@ -225,16 +237,103 @@ body {
 }
 
 /* Mode cinéma */
-
 #cine, #cinestop {
-	background-image: radial-gradient(ellipse at center, #100000, black);
+	background-image: radial-gradient(ellipse at center, #983737, #983737);
 	border-radius: 30px; 
 	text-align: center;
-	-webkit-transition: all 0.25s;
 	transition-duration: 1s; color: white;
 }
 
-
-#lecteur1, #chat, #bouton1, #bouton, #hug {
+#lecteur1, #chat, #bouton, #bouton1, #bouton11 {
   transition-duration: 0.75s;
+}
+
+#bouton1 {
+  position: static;
+}
+
+#chat {
+  width: 18.2vw; height: 26.035vw;
+}
+#lecteur1 {
+  height: 26.035vw; width: 39.1vw;
+}
+/*FIN MODE CINEMA*/
+
+/*BOUTONS DROITE*/
+#pan {
+  height: 3vw;
+  width: 192px;
+  transition-duration: 0.25s;
+  position: static;
+}
+#pan:hover {
+  background: #983737;
+}
+#pan:active {
+  background: #812f2f;
+}
+
+#pan1, #pan12, #pan13 {
+  height: 3vw;
+  width: 192px;
+  margin-top: 0.261vw;
+  transition-duration: 0.25s;
+  position: static;
+}
+#pan1:hover, #pan12:hover, #pan13:hover {
+  background: #983737;
+}
+#pan1:active, #pan12:active, #pan13:active {
+  background: #812f2f;
+}
+
+#pan2, #pan21, #pan22 {
+  height: 3vw;
+  width: 192px;
+  margin-top: 3vw;
+  transition-duration: 0.25s;
+  position: static;
+}
+#pan2:hover, #pan21:hover, #pan22:hover {
+  background: #983737;
+}
+#pan2:active, #pan21:active, #pan22:active  {
+  background: #812f2f;
+}
+
+#right {
+  height: 26.2vw;
+  width: 10vw;
+  float: right;
+  position: absolute;
+  bottom: 0px; margin-top: 8.5vw; left: 73.2vw;top: 0px;
+}
+/*FIN BOUTON DROITE*/
+
+/* Ripple effect 
+.ripple {
+  background-position: center;
+  transition: background 0.8s;
+}
+.ripple:hover {
+  background: #983737 radial-gradient(circle, transparent 1%, #983737 1%) center/15000%;
+}
+.ripple:active {
+  background-color: #883030;
+  background-size: 100%;
+  transition: background 0s;
+}
+*/
+
+#qlick {
+  float: right;
+  border-radius: 30px;
+  font-weight: bold; position: absolute;
+  margin-left: 98vw; margin-bottom: 46vw;
+}
+
+#profil {
+  width: 11vw; height: 26.035vw;
+  margin-left: 4px
 }
