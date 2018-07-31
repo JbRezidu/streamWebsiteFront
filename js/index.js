@@ -335,6 +335,30 @@ var setIntervalStreamStatusShaniah33 = function () {
   setInterval(getStreamStatusShaniah33, 60000);
 };
 
+var getStreamStatusBadgraff = function () {
+  $.ajax({
+    url: 'https://api.twitch.tv/helix/streams?user_id=52410582',
+    type: 'GET',
+    headers: {
+     'Client-ID': 'b649omcgoo7t8sak644ivy7z3stzfn'
+    },
+    success: function(result) {
+      if (result.data.length > 0) {
+        // display icon on air
+        $("#icon_online_bady").css('display', 'block');
+      } else {
+        // hide icon on air
+        $("#icon_online_bady").css('display', 'none');
+      }
+    }
+  })
+}
+
+var setIntervalStreamStatusBadgraff = function () {
+  getStreamStatusBadgraff();
+  setInterval(getStreamStatusBadgraff, 60000);
+};
+
 
 $(document).ready(function () {
   setIntervalStreamStatusAlkor();
@@ -350,17 +374,18 @@ $(document).ready(function () {
   setIntervalStreamStatusNiknicooo();
   setIntervalStreamStatusGeneraleweexi();
   setIntervalStreamStatusShaniah33();
+  setIntervalStreamStatusBadgraff();
 });
 //FIN DE POINT ROUGE STREAM
 
 //Mode théatre add !
 var tex = document.getElementById("lecteur1", "chat", "bouton", "bouton1", "bouton1[0]", "logos2", "body", "right");
-
 function buton1() {  
-	bouton1.style.position = 'absolute';
-	bouton1.style.top = '46vw';
+  var _button1 = document.getElementById("bouton1");
+	_button1.style.position = 'absolute';
+	_button1.style.top = '46vw';
 	bouton.style.display = "none";
-	bouton1.style.display = "block";
+	_button1.style.display = "block";
 	chat.style.position = 'absolute';
 	chat.style.left = '79.6vw';
 	chat.style.top = '5px';
@@ -412,57 +437,15 @@ function lecteurleave() {
 	lecteur1.style.position = 'static';
 	chat.style.position = 'static';
 	chat.style.width = '18.2vw';
-	chat.style.height = '26.035vw';
-	bouton1.style.position = 'static';
-	bouton1.style.display = "none";
+  chat.style.height = '26.035vw';
+  var _button1 = document.getElementById("bouton1");
+	_button1.style.position = 'static';
+	_button1.style.display = "none";
 	bouton.style.display = "block";
 	logos2.style.display = "block";  
   body.style.backgroundImage = 'radial-gradient(ellipse at center, #bfbfbf, #f2f2f2)';
   right.style.display = "block";
 	chang();
-}
-
-/*Mode théatre perso*/
-
-function lecteurleavet() {
-	lecteur1.style.height = '26.035vw';
-	lecteur1.style.width = '39.1vw';
-	lecteur1.style.position = 'static';
-	chat.style.position = 'static';
-	chat.style.width = '18.2vw';
-	chat.style.height = '26.035vw';
-	bouton1[0].style.position = 'static';
-	bouton1[0].style.display = "none";
-	bouton.style.display = "block";
-	logos2.style.display = "block";  
-  body.style.backgroundImage = 'radial-gradient(ellipse at center, #bfbfbf, #f2f2f2)';
-  right.style.display = "block";
-	chang();
-}
-
-function buton1t() {  
-	bouton1[0].style.position = 'absolute';
-	bouton1[0].style.top = '46vw';
-	bouton.style.display = "none";
-	bouton1[0].style.display = "block";
-	chat.style.position = 'absolute';
-	chat.style.left = '79.6vw';
-	chat.style.top = '5px';
-  chat.style.width = '20.5vw';
-  chat.style.height = '45vw';
-  body.style.backgroundImage = 'radial-gradient(ellipse at center, #000000, #000000)';
-}
-
-function lecteurt() {
-	logos2.style.display = "none";
-  lecteur1.style.width = '80vw';
-  lecteur1.style.height = '45vw';
-	lecteur1.style.top = '5px';
-	lecteur1.style.left = '0vw';
-  lecteur1.style.position = 'absolute'; 
-  right.style.display = "none";
-	buton1t();
-	cheng();
 }
 /*FIN MODE THEATRE PERSO*/
 
@@ -477,61 +460,64 @@ function chang(text) {
 //Partie lecteurs
 var profils = document.getElementById('lediv');
 function frokan() {
-  document.getElementById("lediv").innerHTML = '<iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=frokans" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/frokans/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe>';
+  document.getElementById("lediv").innerHTML = '<a id="bouton" onclick="lecteur();" onclick="plan()"><img id="pan14" src="./images/panneauthe.png"></img></a><iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=frokans" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/frokans/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe><img id="profil" src="./images/frokanpres.png"></img><br/><div id="bouton1" style="color: white; font-family: impact;" onclick="lecteurleave();"></div><div id="right"/>';
 }
 function alkor() {
-  document.getElementById("lediv").innerHTML = '<iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=alkor_tv" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/alkor_tv/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe>';
+  document.getElementById("lediv").innerHTML = '<a id="bouton" onclick="lecteur();" onclick="plan()"><img id="pan14" src="./images/panneauthe.png"></img></a><iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=alkor_tv" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/alkor_tv/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe><img id="profil" src="./images/alkorpres.png"></img><br/><div id="bouton1" style="color: white; font-family: impact;" onclick="lecteurleave();"></div><div id="right"/>';
 }
 function nmix() {
-  document.getElementById("lediv").innerHTML = '<iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=nmixslash98" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/nmixslash98/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe>';
+  document.getElementById("lediv").innerHTML = '<a id="bouton" onclick="lecteur();" onclick="plan()"><img id="pan14" src="./images/panneauthe.png"></img></a><iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=nmixslash98" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/nmixslash98/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe><img id="profil" src="./images/nmixpres.png"></img><br/><div id="bouton1" style="color: white; font-family: impact;" onclick="lecteurleave();"></div><div id="right"/>';
 }
 function hyo() {
-  document.getElementById("lediv").innerHTML = '<iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=hyoshee" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/hyoshee/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe>';
+  document.getElementById("lediv").innerHTML = '<a id="bouton" onclick="lecteur();" onclick="plan()"><img id="pan14" src="./images/panneauthe.png"></img></a><iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=hyoshee" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/hyoshee/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe><img id="profil" src="./images/hyopres.png"></img><br/><div id="bouton1" style="color: white; font-family: impact;" onclick="lecteurleave();"></div><div id="right"/>';
 }
 function stay() {
-  document.getElementById("lediv").innerHTML = '<iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=stayhightv_" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/stayhightv_/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe>';
+  document.getElementById("lediv").innerHTML = '<a id="bouton" onclick="lecteur();" onclick="plan()"><img id="pan14" src="./images/panneauthe.png"></img></a><iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=stayhightv_" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/stayhightv_/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe><img id="profil" src="./images/staypres.png"></img><br/><div id="bouton1" style="color: white; font-family: impact;" onclick="lecteurleave();"></div><div id="right"/>';
 }
 function unic() {
-  document.getElementById("lediv").innerHTML = '<iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=unicxorn" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/unicxorn/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe><img id="profil" src="./images/unic.png"></img><a id="bouton" onclick="lecteur();" onclick="plan()" style="margin-right: 0.9vw; float: right;" ><img id="pan13" src="./images/panneauthe.png" style="margin-top: 1vw;"></img></a><br/><div id="bouton1" style="color: white; font-family: impact;" onclick="lecteurleave();"></div><div id="right"/>';
+  document.getElementById("lediv").innerHTML = '<a id="bouton" onclick="lecteur();" onclick="plan()"><img id="pan14" src="./images/panneauthe.png"></img></a><iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=unicxorn" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/unicxorn/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe><img id="profil" src="./images/unic.png"></img><br/><div id="bouton1" style="color: white; font-family: impact;" onclick="lecteurleave();"></div><div id="right"/>';
 }
 function law() {
-  document.getElementById("lediv").innerHTML = '<iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=iaw300" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/iaw300/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe>';
+  document.getElementById("lediv").innerHTML = '<a id="bouton" onclick="lecteur();" onclick="plan()"><img id="pan14" src="./images/panneauthe.png"></img></a><iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=iaw300" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/iaw300/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe><img id="profil" src="./images/lawpres.png"></img><br/><div id="bouton1" style="color: white; font-family: impact;" onclick="lecteurleave();"></div><div id="right"/>';
 }
 function whyz() {
-  document.getElementById("lediv").innerHTML = '<iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=whyz_trap" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/whyz_trap/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe>';
+  document.getElementById("lediv").innerHTML = '<a id="bouton" onclick="lecteur();" onclick="plan()"><img id="pan14" src="./images/panneauthe.png"></img></a><iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=whyz_trap" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/whyz_trap/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe><img id="profil" src="./images/whyzpres.png"></img><br/><div id="bouton1" style="color: white; font-family: impact;" onclick="lecteurleave();"></div><div id="right"/>';
 }
 function crazy() {
-  document.getElementById("lediv").innerHTML = '<iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=crazynighttv" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/crazynighttv/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe>';
+  document.getElementById("lediv").innerHTML = '<a id="bouton" onclick="lecteur();" onclick="plan()"><img id="pan14" src="./images/panneauthe.png"></img></a><iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=crazynighttv" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/crazynighttv/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe><img id="profil" src="./images/crazypres.png"></img><br/><div id="bouton1" style="color: white; font-family: impact;" onclick="lecteurleave();"></div><div id="right"/>';
 }
 function glan() {
-  document.getElementById("lediv").innerHTML = '<iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=niknicooo" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/niknicooo/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe>';
+  document.getElementById("lediv").innerHTML = '<a id="bouton" onclick="lecteur();" onclick="plan()"><img id="pan14" src="./images/panneauthe.png"></img></a><iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=glanikon" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/glanikon/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe><img id="profil" src="./images/glanpres.png"></img><br/><div id="bouton1" style="color: white; font-family: impact;" onclick="lecteurleave();"></div><div id="right"/>';
 }
 function weexi() {
-  document.getElementById("lediv").innerHTML = '<iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=generaleweexi" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/generaleweexi/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe>';
+  document.getElementById("lediv").innerHTML = '<a id="bouton" onclick="lecteur();" onclick="plan()"><img id="pan14" src="./images/panneauthe.png"></img></a><iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=generaleweexi" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/generaleweexi/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe><img id="profil" src="./images/weexiprespres.png"></img><br/><div id="bouton1" style="color: white; font-family: impact;" onclick="lecteurleave();"></div><div id="right"/>';
 }
 function sha() {
-  document.getElementById("lediv").innerHTML = '<iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=shaniah33" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/shaniah33/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe>';
+  document.getElementById("lediv").innerHTML = '<a id="bouton" onclick="lecteur();" onclick="plan()"><img id="pan14" src="./images/panneauthe.png"></img></a><iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=shaniah33" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/shaniah33/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe><img id="profil" src="./images/shapres.png"></img><br/><div id="bouton1" style="color: white; font-family: impact;" onclick="lecteurleave();"></div><div id="right"/>';
+}
+function bady() {
+  document.getElementById("lediv").innerHTML = '<a id="bouton" onclick="lecteur();" onclick="plan()"><img id="pan14" src="./images/panneauthe.png"></img></a><iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=badgraff" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/badgraff/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe><img id="profil" src="./images/badypres.png"></img><br/><div id="bouton1" style="color: white; font-family: impact;" onclick="lecteurleave();"></div><div id="right"/>';
 }
 function bdg() {
-  document.getElementById("lediv").innerHTML = '<iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=lebistrodesgamers" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/lebistrodesgamers/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe><div id="right"><a href="http://twitch.tv/lebistrodesgamers" target="_Blank"><img id="pan" src="./images/panneautest.png"></a><a href="https://www.tipeeestream.com/lebistrodesgamers/donation" target="_Blank"><img id="pan1" src="./images/panneaudon.png"></a><a href="https://twitter.com/lebdgfr" target="_Blank"><img id="pan21" src="./images/panneautwit.png"></a><a href="https://www.youtube.com/channel/UC2eTay6Yee--xfBzfOD2rhw" target="_Blank"><img id="pan12" src="./images/panneauyt.png"></a><a onclick="plan()" target="_Blank"><img id="pan22" src="./images/panneauplan.png"></a><a id="bouton" onclick="lecteurt()" target="_Blank"><img id="pan13" src="./images/panneauthe.png"></a></div><div id="bouton1" style="color: white; font-family: impact;" onclick="lecteurleavet();"></div>';
+  document.getElementById("lediv").innerHTML = '<iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=lebistrodesgamers" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/lebistrodesgamers/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe><div id="right"><a href="http://twitch.tv/lebistrodesgamers" target="_Blank"><img id="pan" src="./images/panneautest.png"/></a><br/><a href="https://www.tipeeestream.com/lebistrodesgamers/donation" target="_Blank"><img id="pan1" src="./images/panneaudon.png"/></a><br/><a href="https://twitter.com/lebdgfr" target="_Blank"><img id="pan21" src="./images/panneautwit.png"/></a><br/><a href="https://www.youtube.com/channel/UC2eTay6Yee--xfBzfOD2rhw" target="_Blank"><img id="pan12" src="./images/panneauyt.png"></a><br/><a onclick="plan()" target="_Blank"><img id="pan22" src="./images/panneauplan.png"></a><br/><a id="bouton" onclick="lecteurt()" target="_Blank"><img id="pan13" src="./images/panneauthe.png"></a></div><div id="bouton1" style="color: white; font-family: impact;" onclick="lecteurleavet();"></div>';
 }
 /* FIN FONCTIONS LECTEUR INDICIDUEL */
 
 /*BOUTONS ACCEUILS */
 function contact() {
-  setTimeout("window.location='cont.html'", 0800); 
+  setTimeout("window.location='cont'", 800); 
 }
 function index() {
-  setTimeout("window.location='index.html'", 0800); 
+  setTimeout("window.location='index'", 800); 
 }
 function planning() {
-  setTimeout("window.location='planning.html'", 0800); 
+  setTimeout("window.location='graph'", 800); 
 }
 function partners() {
-  setTimeout("window.location='partners.html'", 0800); 
+  setTimeout("window.location='partners'", 800); 
 }
 function discord() {
-  setInterval(window.open("https://discord.gg/qchzRDq"), 0800);
+  setInterval(window.open("https://discord.gg/qchzRDq"), 800);
 }
 //FIN BOUTONS ACCEUIL
 
@@ -551,3 +537,66 @@ function quit(text) {
   right.style.display = "block";
 }
 //FIN SECTION PLANNING
+//MODE SOMBRE
+
+var modesombre = document.getElementById("sombre", "body", "sombreq");
+
+function blackmode() {
+  body.style.backgroundImage = 'radial-gradient(ellipse at center, #595959, #000000)';
+  sombreq.style.display = "block";
+  sombre.style.display = "none"
+  document.getElementById("sombreq").innerHTML = '<img id="sombreoff" src="./images/mdesombreon.png"></img>';
+}
+
+function stopmodeb() {
+  body.style.backgroundImage = 'radial-gradient(ellipse at center, #bfbfbf, #f2f2f2)';
+  sombreq.style.display = "none";
+  sombre.style.display = "block"
+  document.getElementById("sombreq").innerHTML = '';
+}
+
+//PARTIE GRAPH
+
+var zoomedElement;
+
+function zoomimg(element) {
+  var blackfont = document.getElementById('blackfont');
+  var qlick = document.getElementById('qlick');
+  zoomedElement = element;
+  element.style.position = "absolute";
+  element.style.height = "40vw";
+  element.style.width = "80vw";
+  element.style.top = "5vw";
+  element.style.left = "11vw";
+  element.style.borderRadius = "0px";
+  element.style.marginLeft = "0px";
+  blackfont.style.display = "block";
+  qlick.style.display = "block";
+}
+
+function quitfont() {
+  var blackfont = document.getElementById('blackfont');
+  var qlick = document.getElementById('qlick');
+  zoomedElement.style.position = "static";
+  zoomedElement.style.height = "7vw";
+  zoomedElement.style.width = "12vw";
+  zoomedElement.style.top = "3.9vw";
+  zoomedElement.style.left = "0vw";
+  zoomedElement.style.marginLeft = "1.4vw";
+  zoomedElement.style.borderRadius = "50px";
+  qlick.style.display = "none";
+  blackfont.style.display = "none";
+}
+
+/*CONTACT*/
+
+function formul() {
+  var surname = document.getElementById('surname').value;
+  var name = document.getElementById('name01').value;
+  var mail = document.getElementById('mail').value;
+  var reason = document.getElementById("reason").value;
+  var message = document.getElementById('message').value;
+  window.location = ("mailto:lebdgstream@gmail.com?subject="+ reason +"&body=" + message + " voici mon mail : " + mail)
+}
+
+

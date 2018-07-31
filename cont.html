@@ -2,74 +2,68 @@
 <html>
 
 <head>
-  <title>Le Bistro Des Gamers - Contact</title>
+  <title>Le Bistro des Gamers - Contact</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <meta charset="utf-8">
-  <link rel="icon" type="image/gif" href="animated_favicon1.png">
+  <link rel="icon" href="animated_favicon1.png">
   <script src="./js/jquery-3.2.1.min.js"></script>
   <script src="./js/index.js"></script>
 </head>
 
 <body>
-  <div id="ban">
-    <div class="header-left-side">
-      <img id="logo" src="images/bdglogo.png" />
-      <div id="titre">Le Bistro Des Gamers 🍻</div>
-    </div>
-    <div class="header-right-side">
-      <a class="header-link" href="index.html">Accueil</a>
-      <a class="header-link" href="">
-        Contact
+    <div id="ban">
+      <div class="header-left-side">
+        <img id="logo" src="images/bdglogo.png" />
+        <div id="titre">Le Bistro des Gamers &#x1F37A;</div>
+      </div>
+      <div class="header-right-side">
+        <a class="header-link" onclick="index()">
+      Accueil
       </a>
-      <a class="header-link" href="partners.html">
-        Partenaires
-      </a>
-      <a class="header-link" href="https://discord.gg/qchzRDq" target=_Blank>
-        Discord
-      </a>
-      <a class="header-link" href="planning.html">
-        Planning
-      </a>
-    </div>
-  </div>
+        <a class="header-link" >
+          Contact
+        </a>
+        <a class="header-link" onclick="partners()">
+          Partenaires
+        </a>
+        <a class="header-link" onclick="discord()" target="_Blank">
+          Discord
+        </a>
+        <a class="header-link" onclick="planning()">
+          Graphistes
+        </a>
+      </div>
+      </div>
 	<br/>
   <br/><br/><br/>
   <br/>
 <center>
-  <!- Premier bouton. ->
-  <a href="https://goo.gl/forms/0vht7h1On43vvUR72" target=_Blank>
-    <p id="re" style="display : inline-block;">
-      <button id="Recutements">  Demande par rapport aux recrutements. 
-      </button> 
-    </p> 
-  </a>
-  <!-fin du premier bouton.->
+  <div class="middle-contact">
+  <p id="contact">Nous contacter : </p>
 
-<br/>
-<br/>
-<br/>
 
-  <!-Second bouton->
-  <a href="https://www.twitch.tv/lebistrodesgamers" target=_Blank>
-    <p id="re" style="display : inline-block;">
-      <button id="Recutements1">  Comment accéder à la chaîne twitch ? 
-      </button> 
+    <p>
+      <input type="text" name="nom" placeholder="votre nom.." id="name01" required/>
     </p>
-  </a>
-  <!-fin du second bouton.->
-
-<br/>
-<br/>
-<br/>
-
-  <!-troisième bouton->
-  <a href="mailto:lebdgstream@gmail.com?subject=Demande depuis le site web.&body=Veuillez écrire votre message.">
-    <p style="display : inline-block;">
-      <button id="Recutements2">  Autres informations complémentaire (site, chaine, etc ...) 
-      </button> 
-    </p>
-  </a>
-  <!-fin du troisième bouton.->
+  <p>
+    <input type="text" name="prenom" placeholder="votre prénom.." id="surname" required/>
+  </p>
+  <p>
+    <input type="email" name="Email" placeholder="e.mail@email.com" id="mail" required />
+  </p>
+  <p>
+    <select name="raison" id="reason" required >
+      <option >Demande par rapport aux recrutements.</option>
+      <option >Comment accéder à la chaîne twitch.</option>
+      <option >Ou est-ce qu'est le planning.</option>
+      <option >Autres ? Veuillez préciser</option>
+    </select>
+  </p>
+  <p>
+    <textarea name="Message" id="message">Veuillez entrer votre message ici..</textarea>
+  </p>
+    <button value="Envoyer" id="boutonsend" onclick="formul()">Envoyer !</button>
+</div>
 	</center>
 
 </body>

@@ -9,6 +9,11 @@ body {
  margin: auto;
 }
 
+#bodygraph {
+ background-image: radial-gradient(ellipse at center, #ffffff, #ffffff);
+ margin: auto;
+}
+
 #logo {
   height: 3.907vw;
   width: 3.907vw;
@@ -17,9 +22,9 @@ body {
 
 #titre {
   margin-left: 0.261vw;
-  font-family: impact;
+  font-family: 'Roboto', sans-serif;
   font-size: 30px;
-  margin-top: 0.95vw;
+  margin-top: 0.80vw;
   float: left;
 }
 
@@ -36,7 +41,7 @@ body {
 .header-link {
   display: inline-block;
   font-size: 25px;
-  font-family: impact;
+  font-family: 'Roboto', sans-serif;
   margin-top: 0.782vw;
   margin-bottom: 10px;
   margin-right: 5px;
@@ -105,6 +110,36 @@ body {
   display: inline-block;
 }
 
+#logosgraph {
+  height: 5.2vw;
+  width: 5.2vw;
+  position: static;
+  border-radius: 50px;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  -webkit-transition: all 0.75s;
+  transition: all 0.25s;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+#logosgraph:hover {
+  height: 5.2vw;
+  width: 5.2vw;
+  border-radius: 30px;
+  border-width: 2px; border-color: white;
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  -webkit-transition: all 0.25s;
+  transition: all 0.75s;
+}
+
 #logos1:hover {
   height: 4.3vw;
   width: 4.3vw;
@@ -121,7 +156,7 @@ body {
 
 .stream-zone {
   margin-right: auto;
-  margin-left: 15.45vw;
+  margin-left: 16.45vw;
   margin-top: 4.6vw;
   width: 1328px;
 }
@@ -143,7 +178,7 @@ body {
 }
 
 /* On Air icons */
-#icon_online_alkor, #icon_online_stay, #icon_online_hyoshee, #icon_online_whyz, #icon_online_frokan, #icon_online_law, #icon_online_unic, #icon_online_streamerzone, #icon_online_crazy, #icon_online_glanik, #icon_online_weexi, #icon_online_sha {
+#icon_online_alkor, #icon_online_stay, #icon_online_hyoshee, #icon_online_whyz, #icon_online_frokan, #icon_online_law, #icon_online_unic, #icon_online_streamerzone, #icon_online_crazy, #icon_online_glanik, #icon_online_weexi, #icon_online_sha, #icon_online_bady {
   height: 20px;
   width: 20px;
   background-color: red;
@@ -195,45 +230,40 @@ body {
 /*Bouton n*1 */
 
 #Recutements {
-	color: white; background-color: #DF7401; border-color: black; border-size: 1px;
-	border-radius: 30px; width: 600px; height: 50px;
-	font-size: 20px; font-family: impact; font-style: bold; border-font: 1px solid black;
+	color: white; background-color: #983737; border-color: black; width: 600px; height: 50px;
+	font-size: 20px; font-family: 'Roboto', sans-serif; font-style: bold;
 }
 
 #Recutements:hover {
-	color: black; background-color: #FE9A2E; border-color: #0174DF; border-size: 1px;
-	border-radius: 30px; width: 600px; height: 50px;
-	font-size: 20px; font-family: impact; font-style: bold; border-font: 1px solid black;
+  color: black; background-color: #983737; border-color: #0174DF; 
+  border: 1px; width: 600px; height: 50px;
+	font-size: 20px; font-family: 'Roboto', sans-serif; font-style: bold;
 }
 
 
 /*Bouton n*2 */
 
 #Recutements1 {
-	color: white; background-color: #0174DF; border-color: black; border-size: 1px;
-	border-radius: 30px; width: 600px; height: 50px;
-	font-size: 20px; font-family: impact; font-style: bold; border-font: 1px solid black;
+	color: white; background-color: #983737; border-color: black; width: 600px; height: 50px;
+	font-size: 20px; font-family: 'Roboto', sans-serif; font-style: bold;
 }
 
 #Recutements1:hover {
-	color: black; background-color: #2E9AFE; border-color: #FE9A2E; border-size: 1px;
-	border-radius: 30px; width: 600px; height: 50px;
-	font-size: 20px; font-family: impact; font-style: bold; border-font: 1px solid black;
+	color: black; background-color: #983737; border-color: #FE9A2E; width: 600px; height: 50px;
+	font-size: 20px; font-family: 'Roboto', sans-serif; font-style: bold;
 }
 
 
 /*Bouton n*3 */
 
 #Recutements2 {
-	color: white; background-color: #DF7401; border-color: black; border-size: 1px;
-	border-radius: 30px; width: 600px; height: 50px;
-	font-size: 20px; font-family: impact; font-style: bold; border-font: 1px solid black;
+	color: white; background-color: #983737; border-color: black; width: 600px; height: 50px;
+	font-size: 20px; font-family: 'Roboto', sans-serif; font-style: bold;
 }
 
 #Recutements2:hover {
-	color: black; background-color: #FE9A2E; border-color: #0174DF; border-size: 1px;
-	border-radius: 30px; width: 600px; height: 50px;
-	font-size: 20px; font-family: impact; font-style: bold; border-font: 1px solid black;
+	color: black; background-color: #983737; border-color: #0174DF; width: 600px; height: 50px;
+	font-size: 20px; font-family: 'Roboto', sans-serif; font-style: bold;
 }
 
 /* Mode cinéma */
@@ -263,8 +293,8 @@ body {
 /*BOUTONS DROITE*/
 #pan {
   height: 3vw;
-  width: 192px;
-  transition-duration: 0.25s;
+  width: 3vw;
+  transition-duration: 0.10s;
   position: static;
 }
 #pan:hover {
@@ -274,14 +304,23 @@ body {
   background: #812f2f;
 }
 
+#pan14 {
+  height: 3vw;
+  width: 3vw;
+  left: 67.5vw;
+  transition-duration: 0.210s;
+  position: absolute;
+  margin-top: 0vw; top: 5.5vw;
+}
+
 #pan1, #pan12, #pan13 {
   height: 3vw;
-  width: 192px;
+  width: 3vw;
   margin-top: 0.261vw;
-  transition-duration: 0.25s;
+  transition-duration: 0.210s;
   position: static;
 }
-#pan1:hover, #pan12:hover, #pan13:hover {
+#pan1:hover, #pan12:hover, #pan13:hover, #pan14:hover {
   background: #983737;
 }
 #pan1:active, #pan12:active, #pan13:active {
@@ -290,7 +329,7 @@ body {
 
 #pan2, #pan21, #pan22 {
   height: 3vw;
-  width: 192px;
+  width: 3vw;
   margin-top: 3vw;
   transition-duration: 0.25s;
   position: static;
@@ -307,7 +346,7 @@ body {
   width: 10vw;
   float: right;
   position: absolute;
-  bottom: 0px; margin-top: 8.5vw; left: 73.2vw;top: 0px;
+  bottom: 0px; margin-top: 8.5vw; left: 74.2vw;top: 0px;
 }
 /*FIN BOUTON DROITE*/
 
@@ -336,4 +375,98 @@ body {
 #profil {
   width: 11vw; height: 26.035vw;
   margin-left: 4px
+}
+#sombre {
+  margin-top: 5.5vw;
+  position: absolute;
+  margin-left: 70.8vw;
+}
+
+#sombreq {
+  margin-left: 70.8vw;
+  margin-top: 5.5vw;
+  display: none;
+  position: absolute;
+}
+
+#sombreon, #sombreoff {
+  height: 3vw;
+  width: 3vw;
+}
+
+#sombreon:hover, #sombreoff:hover {
+  background: #983737;
+  height: 3vw;
+  width: 3vw;
+}
+
+#plan {
+  border-left-width: 0px; overflow: hidden;
+  border-top-width: 0px;  margin-top: 1.5vw;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+}
+
+#top-bar, #doc-title {
+  display: none; width: 0px; height: 0px;
+}
+
+#affiche, #affiche1 {
+  height: 7vw;margin-left: 1.4vw;margin-top: 1vw; border-radius: 50px; width: 12vw;
+  transition-duration: 0.25s;
+}
+
+#affiche:hover, #affiche1:hover {
+  height: 7vw;  margin-top: 1vw; border-radius: 20px
+}
+
+#affiches {
+  width: 100vw; height: auto;
+}
+
+#blackfont {
+  display: none;
+  position: absolute;
+  height: 46.4vw;
+  width: 100%; 
+  top: 3.9vw;
+  opacity: 0.5;
+  background-color: black;
+}
+
+.image-clicked {
+  position: absolute;
+  height: 40vw;
+  width: 80vw;
+  top: 5vw;
+  left: 12vw;
+  border-radius: 0px;
+}
+
+.image-not-clicked {
+  height: 40vw;
+  top: 5vw;
+  left: 12vw;
+  border-radius: 0px;
+}
+
+/*contact*/
+
+#name01, #surname, #mail, #reason {
+  width: 20vw; height: 3vw;
+  border-radius: 4px;
+}
+
+#message {
+  width: 20vw;
+  height: 10vw;
+}
+
+#contact {
+  font-family: 'Roboto', sans-serif; font-size: 1vw;
+}
+
+#boutonsend {
+  width: 9vw; border-radius: 4px; border-color: black;
+  height: 1.5vw; background-color: #983737; font-family: 'Roboto', sans-serif;
 }

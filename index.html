@@ -2,22 +2,24 @@
 <html>
 
 <head onload="bouton.style.display = 'none';">
-  <title>Le Bistro Des Gamers - Accueil</title>
+  <title>Le Bistro des Gamers - Accueil</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <meta charset="utf-8">
-  <link rel="icon" type="image/gif" href="animated_favicon1.png">
+  <link rel="icon" href="animated_favicon1.png">
   <script src="./js/jquery-3.2.1.min.js"></script>
   <script src="./js/index.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 
 <body id="body">
+    <div id="sombre" onclick="blackmode();"><img id="sombreon" src="./images/mdesombreon.png"></img></div> <div id="sombreq" onclick="stopmodeb();"></div>
   <div id="ban">
     <div class="header-left-side">
       <img id="logo" src="images/bdglogo.png" />
-      <div id="titre">Le Bistro Des Gamers &#x1F37A;</div>
+      <div id="titre">Le Bistro des Gamers &#x1F37A;</div>
     </div>
     <div class="header-right-side">
-      <a class="header-link" href="#">
+      <a class="header-link">
 	  Accueil
 	  </a>
       <a class="header-link" onclick="contact()">
@@ -26,7 +28,7 @@
       <a class="header-link" onclick="partners()">
         Partenaires
       </a>
-      <a class="header-link" onclick="discord()" target="_Blank">
+      <a class="header-link" onclick="discord()">
         Discord
       </a>
       <a class="header-link" onclick="planning()">
@@ -39,13 +41,13 @@
     <div id="lediv">
     <iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=lebistrodesgamers" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> 
     <iframe id="chat" src="https://www.twitch.tv/embed/lebistrodesgamers/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe>
-   <div id="right" >
-    <a href="http://twitch.tv/lebistrodesgamers" target="_Blank" ><img id="pan" src="./images/panneautest.png"/></a>
-    <a href="https://www.tipeeestream.com/lebistrodesgamers/donation" target="_Blank" ><img id="pan1" src="./images/panneaudon.png"></img></a>
-    <a href="https://twitter.com/lebdgfr" target="_Blank" ><img id="pan21" src="./images/panneautwit.png"></img></a>
-    <a href="https://www.youtube.com/channel/UC2eTay6Yee--xfBzfOD2rhw" target="_Blank" ><img id="pan12" src="./images/panneauyt.png"></img></a>
-    <a onclick="plan()" target="_Blank" ><img id="pan22" src="./images/panneauplan.png"></img></a>
-    <a id="bouton" onclick="lecteur()" onclick="plan()" target="_Blank" ><img id="pan13" src="./images/panneauthe.png"></img></a>
+    <div id="right" >
+    <a href="http://twitch.tv/lebistrodesgamers" target="_Blank" ><img id="pan" src="./images/panneautest.png"/></a><br/>
+    <a href="https://www.tipeeestream.com/lebistrodesgamers/donation" target="_Blank" ><img id="pan1" src="./images/panneaudon.png"></img></a><br/>
+    <a href="https://twitter.com/lebdgfr" target="_Blank" ><img id="pan21" src="./images/panneautwit.png"></img></a><br/>
+    <a href="https://www.youtube.com/channel/UC2eTay6Yee--xfBzfOD2rhw" target="_Blank" ><img id="pan12" src="./images/panneauyt.png"></img></a><br/>
+    <a onclick="plan()" target="_Blank" ><img id="pan22" src="./images/panneauplan.png"></img></a><br/>
+    <a id="bouton" onclick="lecteur()" onclick="plan()" target="_Blank" ><img id="pan13" src="./images/panneauthe.png"></img></a><br/>
   
    </div>
   </div>
@@ -132,6 +134,12 @@
           <div id="icon_online_sha"></div>
         </a>
       </div>
+      <div>
+          <a title="Badgraff" onclick="bady()">
+            <img src="images/bady.jpg" id="logos1" />
+            <div id="icon_online_bady"></div>
+          </a>
+        </div>
     </div>
   </div>
 
