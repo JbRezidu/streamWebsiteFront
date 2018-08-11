@@ -524,7 +524,7 @@ function discord() {
 //SECTION PLANNING
 var quitter = document.getElementById("plann", "logos2", "qlick", "right");
 function plan() {
-  document.getElementById("plann").innerHTML = '<iframe id="plan" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRMj1HgkKsdkFmbLfx44XY_OmlV49iw4KnTq37dadddzqOSVxicSWKH5TMCi094OQHSXlfF1oEXu-Km/pubhtml?gid=1743127860&amp;single=true&amp;widget=true&amp;headers=false" scrolling="no" style="height: 40vw; width: 93.8vw; float: center; position: absolute; margin-left: 3vw;"></iframe><button id="qlick" onclick="quit()">X</p>'
+  document.getElementById("plann").innerHTML = '<iframe id="plan" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRMj1HgkKsdkFmbLfx44XY_OmlV49iw4KnTq37dadddzqOSVxicSWKH5TMCi094OQHSXlfF1oEXu-Km/pubhtml?gid=1743127860&amp;single=true&amp;widget=true&amp;headers=false" scrolling="no" style="height: 41vw; width: 94.8vw; float: center; position: absolute; margin-left: 3vw;"></iframe><button id="qlick" onclick="quit()">X</p>'
   plann.style.display = "block";
   qlick.style.display = "block";
   logos2.style.display = "none";
