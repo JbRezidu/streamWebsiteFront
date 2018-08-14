@@ -263,30 +263,6 @@ var setIntervalStreamStatusCrazyNightTv = function () {
   setInterval(getStreamStatusCrazyNightTv, 60000);
 };
 
-var getStreamStatusNiknicooo = function () {
-  $.ajax({
-    url: 'https://api.twitch.tv/helix/streams?user_id=47863842',
-    type: 'GET',
-    headers: {
-     'Client-ID': 'b649omcgoo7t8sak644ivy7z3stzfn'
-    },
-    success: function(result) {
-      if (result.data.length > 0) {
-        // display icon on air
-        $("#icon_online_glanik").css('display', 'block');
-      } else {
-        // hide icon on air
-        $("#icon_online_glanik").css('display', 'none');
-      }
-    }
-  })
-}
-
-var setIntervalStreamStatusNiknicooo = function () {
-  getStreamStatusNiknicooo();
-  setInterval(getStreamStatusNiknicooo, 60000);
-};
-
 var getStreamStatusGeneraleweexi = function () {
   $.ajax({
     url: 'https://api.twitch.tv/helix/streams?user_id=232995574',
@@ -371,7 +347,6 @@ $(document).ready(function () {
   setIntervalStreamStatusStayHighTV_();
   setIntervalStreamStatusIaw300();
   setIntervalStreamStatusCrazyNightTv();
-  setIntervalStreamStatusNiknicooo();
   setIntervalStreamStatusGeneraleweexi();
   setIntervalStreamStatusShaniah33();
   setIntervalStreamStatusBadgraff();
@@ -485,9 +460,6 @@ function whyz() {
 }
 function crazy() {
   document.getElementById("lediv").innerHTML = '<a id="bouton" onclick="lecteur();" onclick="plan()"><img id="pan14" src="./images/panneauthe.png"></img></a><iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=crazynighttv" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/crazynighttv/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe><img id="profil" src="./images/crazypres.png"></img><br/><div id="bouton1" style="color: white; font-family: impact;" onclick="lecteurleave();"></div><div id="right"/>';
-}
-function glan() {
-  document.getElementById("lediv").innerHTML = '<a id="bouton" onclick="lecteur();" onclick="plan()"><img id="pan14" src="./images/panneauthe.png"></img></a><iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=glanikon" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/glanikon/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe><img id="profil" src="./images/glanpres.png"></img><br/><div id="bouton1" style="color: white; font-family: impact;" onclick="lecteurleave();"></div><div id="right"/>';
 }
 function weexi() {
   document.getElementById("lediv").innerHTML = '<a id="bouton" onclick="lecteur();" onclick="plan()"><img id="pan14" src="./images/panneauthe.png"></img></a><iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=generaleweexi" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/generaleweexi/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe><img id="profil" src="./images/weexiprespres.png"></img><br/><div id="bouton1" style="color: white; font-family: impact;" onclick="lecteurleave();"></div><div id="right"/>';
