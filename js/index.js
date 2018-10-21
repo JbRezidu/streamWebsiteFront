@@ -71,7 +71,7 @@ var setIntervalStreamStatusNmixslash = function () {
   setInterval(getStreamStatusNmixslash, 60000);
 };
 
-var getStreamStatusHyoshee = function () {
+var getStreamStatusWolfy = function () {
   $.ajax({
     url: 'https://api.twitch.tv/helix/streams?user_id=178737082',
     type: 'GET',
@@ -81,18 +81,18 @@ var getStreamStatusHyoshee = function () {
     success: function(result) {
       if (result.data.length > 0) {
         // display icon on air
-        $("#icon_online_hyoshee").css('display', 'block');
+        $("#icon_online_wolfy").css('display', 'block');
       } else {
         // hide icon on air
-        $("#icon_online_hyoshee").css('display', 'none');
+        $("#icon_online_wolfy").css('display', 'none');
       }
     }
   })
 }
 
-var setIntervalStreamStatusHyoshee = function () {
-  getStreamStatusHyoshee();
-  setInterval(getStreamStatusHyoshee, 60000);
+var setIntervalStreamStatusWolfy = function () {
+  getStreamStatusWolfy();
+  setInterval(getStreamStatusWolfy, 60000);
 };
 
 var getStreamStatusJohnyytb = function () {
@@ -263,9 +263,9 @@ var setIntervalStreamStatusCrazyNightTv = function () {
   setInterval(getStreamStatusCrazyNightTv, 60000);
 };
 
-var getStreamStatusGeneraleweexi = function () {
+var getStreamStatusToshasama = function () {
   $.ajax({
-    url: 'https://api.twitch.tv/helix/streams?user_id=232995574',
+    url: 'https://api.twitch.tv/helix/streams?user_id=263725651',
     type: 'GET',
     headers: {
      'Client-ID': 'b649omcgoo7t8sak644ivy7z3stzfn'
@@ -273,18 +273,18 @@ var getStreamStatusGeneraleweexi = function () {
     success: function(result) {
       if (result.data.length > 0) {
         // display icon on air
-        $("#icon_online_weexi").css('display', 'block');
+        $("#icon_online_tosha").css('display', 'block');
       } else {
         // hide icon on air
-        $("#icon_online_weexi").css('display', 'none');
+        $("#icon_online_tosha").css('display', 'none');
       }
     }
   })
 }
 
-var setIntervalStreamStatusGeneraleweexi = function () {
-  getStreamStatusGeneraleweexi();
-  setInterval(getStreamStatusGeneraleweexi, 60000);
+var setIntervalStreamStatusToshasama = function () {
+  getStreamStatusToshasama();
+  setInterval(getStreamStatusToshasama, 60000);
 };
 
 var getStreamStatusShaniah33 = function () {
@@ -335,21 +335,70 @@ var setIntervalStreamStatusBadgraff = function () {
   setInterval(getStreamStatusBadgraff, 60000);
 };
 
+var getStreamStatusTenjokie = function () {
+  $.ajax({
+    url: 'https://api.twitch.tv/helix/streams?user_id=106816336',
+    type: 'GET',
+    headers: {
+     'Client-ID': 'b649omcgoo7t8sak644ivy7z3stzfn'
+    },
+    success: function(result) {
+      if (result.data.length > 0) {
+        // display icon on air
+        $("#icon_online_tenjo").css('display', 'block');
+      } else {
+        // hide icon on air
+        $("#icon_online_tenjo").css('display', 'none');
+      }
+    }
+  })
+}
+
+var setIntervalStreamStatusTenjokie = function () {
+  getStreamStatusTenjokie();
+  setInterval(getStreamStatusTenjokie, 60000);
+};
+
+var getStreamStatusErfang = function () {
+  $.ajax({
+    url: 'https://api.twitch.tv/helix/streams?user_id=106816336',
+    type: 'GET',
+    headers: {
+     'Client-ID': 'b649omcgoo7t8sak644ivy7z3stzfn'
+    },
+    success: function(result) {
+      if (result.data.length > 0) {
+        // display icon on air
+        $("#icon_online_erfang").css('display', 'block');
+      } else {
+        // hide icon on air
+        $("#icon_online_erfang").css('display', 'none');
+      }
+    }
+  })
+}
+
+var setIntervalStreamStatusErfang = function () {
+  getStreamStatusErfang();
+  setInterval(getStreamStatusErfang, 60000);
+};
+
 
 $(document).ready(function () {
   setIntervalStreamStatusAlkor();
   setIntervalStreamStatusFrokan();
   setIntervalStreamStatusNmixslash();
-  setIntervalStreamStatusHyoshee();
+  setIntervalStreamStatusWolfy();
   setIntervalStreamStatusWhyz_Trap();
   setIntervalStreamStatusStreamerZone();
-  setIntervalStreamStatusUnicxorn();
+  setIntervalStreamStatusTenjokie();
   setIntervalStreamStatusStayHighTV_();
   setIntervalStreamStatusIaw300();
   setIntervalStreamStatusCrazyNightTv();
-  setIntervalStreamStatusGeneraleweexi();
+  setIntervalStreamStatusToshasama();
   setIntervalStreamStatusShaniah33();
   setIntervalStreamStatusBadgraff();
+  setIntervalStreamStatusErfang();
 });
 //FIN DE POINT ROUGE STREAM
 
@@ -469,6 +518,18 @@ function sha() {
 }
 function bady() {
   document.getElementById("lediv").innerHTML = '<a id="bouton" onclick="lecteur();" onclick="plan()"><img id="pan14" src="./images/panneauthe.png"></img></a><iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=badgraff" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/badgraff/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe><img id="profil" src="./images/badypres.png"></img><br/><div id="bouton1" style="color: white; font-family: impact;" onclick="lecteurleave();"></div><div id="right"/>';
+}
+function tosha() {
+  document.getElementById("lediv").innerHTML = '<a id="bouton" onclick="lecteur();" onclick="plan()"><img id="pan14" src="./images/panneauthe.png"></img></a><iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=toshasama" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/toshasama/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe><img id="profil" src="./images/x.png"></img><br/><div id="bouton1" style="color: white; font-family: impact;" onclick="lecteurleave();"></div><div id="right"/>';
+}
+function tenjo() {
+  document.getElementById("lediv").innerHTML = '<a id="bouton" onclick="lecteur();" onclick="plan()"><img id="pan14" src="./images/panneauthe.png"></img></a><iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=tenjokiegaming" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/tenjokiegaming/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe><img id="profil" src="./images/x.png"></img><br/><div id="bouton1" style="color: white; font-family: impact;" onclick="lecteurleave();"></div><div id="right"/>';
+}
+function wolfy() {
+  document.getElementById("lediv").innerHTML = '<a id="bouton" onclick="lecteur();" onclick="plan()"><img id="pan14" src="./images/panneauthe.png"></img></a><iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=wolfiynz" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/wolfiynz/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe><img id="profil" src="./images/x.png"></img><br/><div id="bouton1" style="color: white; font-family: impact;" onclick="lecteurleave();"></div><div id="right"/>';
+}
+function erfang() {
+  document.getElementById("lediv").innerHTML = '<a id="bouton" onclick="lecteur();" onclick="plan()"><img id="pan14" src="./images/panneauthe.png"></img></a><iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=erf4ng" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/erf4ng/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe><img id="profil" src="./images/x.png"></img><br/><div id="bouton1" style="color: white; font-family: impact;" onclick="lecteurleave();"></div><div id="right"/>';
 }
 function bdg() {
   document.getElementById("lediv").innerHTML = '<iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=lebistrodesgamers" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/lebistrodesgamers/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe><div id="right"><a href="http://twitch.tv/lebistrodesgamers" target="_Blank"><img id="pan" src="./images/panneautest.png"/></a><br/><a href="https://www.tipeeestream.com/lebistrodesgamers/donation" target="_Blank"><img id="pan1" src="./images/panneaudon.png"/></a><br/><a href="https://twitter.com/lebdgfr" target="_Blank"><img id="pan21" src="./images/panneautwit.png"/></a><br/><a href="https://www.youtube.com/channel/UC2eTay6Yee--xfBzfOD2rhw" target="_Blank"><img id="pan12" src="./images/panneauyt.png"></a><br/><a onclick="plan()" target="_Blank"><img id="pan22" src="./images/panneauplan.png"></a><br/><a id="bouton" onclick="lecteurt()" target="_Blank"><img id="pan13" src="./images/panneauthe.png"></a></div><div id="bouton1" style="color: white; font-family: impact;" onclick="lecteurleavet();"></div>';
