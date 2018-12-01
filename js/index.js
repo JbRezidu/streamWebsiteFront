@@ -167,9 +167,9 @@ var setIntervalStreamStatusUnicxorn = function () {
   setInterval(getStreamStatusUnicxorn, 60000);
 };
 
-var getStreamStatusStayHighTV_ = function () {
+var getStreamStatusMatruks = function () {
   $.ajax({
-    url: 'https://api.twitch.tv/helix/streams?user_id=192213708',
+    url: 'https://api.twitch.tv/helix/streams?user_id=55371642',
     type: 'GET',
     headers: {
      'Client-ID': 'b649omcgoo7t8sak644ivy7z3stzfn'
@@ -177,18 +177,18 @@ var getStreamStatusStayHighTV_ = function () {
     success: function(result) {
       if (result.data.length > 0) {
         // display icon on air
-        $("#icon_online_stay").css('display', 'block');
+        $("#icon_online_matruks").css('display', 'block');
       } else {
         // hide icon on air
-        $("#icon_online_stay").css('display', 'none');
+        $("#icon_online_matruks").css('display', 'none');
       }
     }
   })
 }
 
-var setIntervalStreamStatusStayHighTV_ = function () {
-  getStreamStatusStayHighTV_();
-  setInterval(getStreamStatusStayHighTV_, 60000);
+var setIntervalStreamStatusMatruks = function () {
+  getStreamStatusMatruks();
+  setInterval(getStreamStatusMatruks, 60000);
 };
 
 var getStreamStatusIaw300 = function () {
@@ -361,7 +361,7 @@ var setIntervalStreamStatusTenjokie = function () {
 
 var getStreamStatusErfang = function () {
   $.ajax({
-    url: 'https://api.twitch.tv/helix/streams?user_id=106816336',
+    url: 'https://api.twitch.tv/helix/streams?user_id=62462653',
     type: 'GET',
     headers: {
      'Client-ID': 'b649omcgoo7t8sak644ivy7z3stzfn'
@@ -392,7 +392,7 @@ $(document).ready(function () {
   setIntervalStreamStatusWhyz_Trap();
   setIntervalStreamStatusStreamerZone();
   setIntervalStreamStatusTenjokie();
-  setIntervalStreamStatusStayHighTV_();
+  setIntervalStreamStatusMatruks();
   setIntervalStreamStatusIaw300();
   setIntervalStreamStatusCrazyNightTv();
   setIntervalStreamStatusToshasama();
@@ -495,8 +495,8 @@ function nmix() {
 function hyo() {
   document.getElementById("lediv").innerHTML = '<a id="bouton" onclick="lecteur();" onclick="plan()"><img id="pan14" src="./images/panneauthe.png"></img></a><iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=hyoshee" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/hyoshee/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe><img id="profil" src="./images/hyopres.png"></img><br/><div id="bouton1" style="color: white; font-family: impact;" onclick="lecteurleave();"></div><div id="right"/>';
 }
-function stay() {
-  document.getElementById("lediv").innerHTML = '<a id="bouton" onclick="lecteur();" onclick="plan()"><img id="pan14" src="./images/panneauthe.png"></img></a><iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=stayhightv_" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/stayhightv_/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe><img id="profil" src="./images/staypres.png"></img><br/><div id="bouton1" style="color: white; font-family: impact;" onclick="lecteurleave();"></div><div id="right"/>';
+function matruks() {
+  document.getElementById("lediv").innerHTML = '<a id="bouton" onclick="lecteur();" onclick="plan()"><img id="pan14" src="./images/panneauthe.png"></img></a><iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=matruks" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/matruks/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe><img id="profil" src="./images/#.png"></img><br/><div id="bouton1" style="color: white; font-family: impact;" onclick="lecteurleave();"></div><div id="right"/>';
 }
 function unic() {
   document.getElementById("lediv").innerHTML = '<a id="bouton" onclick="lecteur();" onclick="plan()"><img id="pan14" src="./images/panneauthe.png"></img></a><iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=unicxorn" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/unicxorn/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe><img id="profil" src="./images/unic.png"></img><br/><div id="bouton1" style="color: white; font-family: impact;" onclick="lecteurleave();"></div><div id="right"/>';

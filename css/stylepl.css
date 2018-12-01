@@ -1,0 +1,42 @@
+#planning {
+    width: 350px; height: 600px; float: right; margin-right: 25px; 
+}
+
+#header {
+    background-color: #863131; width: 100%; height: 100px; box-shadow: 2px 2px 2px black; 
+}
+
+#header-title {
+    color: white; font-size: 25px; padding-top: 15px;
+    margin-bottom: 0px; font-family: 'Lobster', cursive;
+}
+#header-under-title {
+    color: white; font-size: 20px; margin-top: 0px;
+
+}
+#header-under {
+    color: white; font-size: 15px; padding-top: 15px;
+    margin-bottom: 0px; font-family: 'Lobster', cursive; margin-top: 0px;
+}
+
+#horaires {
+    
+}
+#hora1, #hora2, #hora3, #hora4, #hora5{
+    display: none; 
+}
+#hor1, #hor2, #hor3, #hor4, #hor5{
+    color: white; font-size: 16px; margin-top: 7px; margin-bottom: 5px; padding-top: 5px; padding-bottom: 5px; padding-left: 44%;
+    background-color: #863131; border-radius: 10px; box-shadow: 2px 2px 2px black; font-family: 'Lobster', cursive;
+}
+#heur1, #heur2, #heur3, #heur4, #heur5, #pseud1, #pseud2, #pseud3, #pseud4, #pseud5 {
+    margin-bottom: 0px; margin-top: 0px; font-family: 'Lobster', cursive;
+}
+
+#under {
+    background-color: #863131; width: 100%; height: 50px; box-shadow: 2px 2px 2px black;
+}
+
+#attributs{
+    float: left;
+}

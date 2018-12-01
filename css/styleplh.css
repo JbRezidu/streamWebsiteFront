@@ -1,0 +1,60 @@
+#planning {
+    width: 1500px; height: 600px; float: right; margin-right: 25px; position: absolute;
+}
+#days {
+    float: left;
+}
+
+#header {
+    background-color: #863131; width: 100%; height: 100px; box-shadow: 2px 2px 2px black; 
+}
+
+#header-title {
+    color: white; font-size: 25px; padding-top: 15px;
+    margin-bottom: 0px; font-family: 'Lobster', cursive;
+}
+#header-under-title {
+    color: white; font-size: 20px; margin-top: 0px;
+
+}
+#header-under {
+    color: white; font-size: 15px; padding-top: 15px;
+    margin-bottom: 0px; font-family: 'Lobster', cursive; margin-top: 0px;
+}
+
+#horaires1, #horaires2, #horaires3, #horaires4 {
+    width: 240px; height: auto; float: left;
+}
+#horaires2, #horaires3, #horaires4{
+    margin-left: 10px;
+}
+#jour1, #jour2, #jour3, #jour4 {
+    color: white; font-size: 16px; margin-bottom: 5px; padding-top: 5px; padding-bottom: 5px; display: none;
+    background-color: #863131; box-shadow: 2px 2px 2px black; font-family: 'Lobster', cursive; width: 100%;
+}
+#namej1, #namej2, #namej3, #namej4 {
+    color: white; font-size: 16px; margin-bottom: 5px; padding-top: 5px; padding-bottom: 5px; padding-left: 44%;
+    background-color: #863131; font-family: 'Lobster', cursive;
+}
+#hora01, #hora02, #hora03, #hora04, #hora05, #hora11, #hora12, #hora13, #hora14, #hora15, #hora31, #hora32, #hora33, #hora34, #hora35, #hora41, #hora42, #hora43, #hora44, #hora45{
+    display: none; 
+}
+#hor01, #hor02, #hor03, #hor04, #hor05, #hor11, #hor12, #hor13, #hor14, #hor15, #hor31, #hor32, #hor33, #hor34, #hor35, #hor41, #hor42, #hor43, #hor44, #hor45{
+    color: white; font-size: 16px; margin-top: 7px; margin-bottom: 5px; padding-top: 5px; padding-bottom: 5px; padding-left: 44%;
+    background-color: #863131; border-radius: 10px; box-shadow: 2px 2px 2px black; font-family: 'Lobster', cursive;
+}
+#heur01, #heur02, #heur03, #heur04, #heur05, #pseud01, #pseud02, #pseud03, #pseud04, #pseud05, #heur11, #heur12, #heur13, #heur14, #heur15, #pseud11, #pseud12, #pseud13, #pseud14, #pseud15, #heur41, #heur42, #heur43, #heur44, #heur45, #pseud41, #pseud42, #pseud43, #pseud44, #pseud45 {
+    margin-bottom: 0px; margin-top: 0px; font-family: 'Lobster', cursive;
+}
+
+#under {
+    background-color: #863131; width: 100%; height: 50px; box-shadow: 2px 2px 2px black; float: left;
+}
+
+#attributs{
+    float: left;
+}
+
+#check01, #check02, #check03, #check04, #check05 {
+    display: none;
+}
