@@ -29,8 +29,12 @@
     color: white; font-size: 16px; margin-top: 7px; margin-bottom: 5px; padding-top: 5px; padding-bottom: 5px; padding-left: 44%;
     background-color: #863131; border-radius: 10px; box-shadow: 2px 2px 2px black; font-family: 'Lobster', cursive;
 }
-#heur1, #heur2, #heur3, #heur4, #heur5, #pseud1, #pseud2, #pseud3, #pseud4, #pseud5 {
-    margin-bottom: 0px; margin-top: 0px; font-family: 'Lobster', cursive;
+#heur1, #heur2, #heur3, #heur4, #heur5,  {
+    font-family: 'Lobster', cursive; margin-bottom: 0px; margin-top: 0px; font-family: 'Lobster', cursive;
+}
+
+#pseud1, #pseud2, #pseud3, #pseud4, #pseud5 {
+    margin-bottom: 0px; margin-top: 0px; font-family: 'Lobster', cursive; padding-left: 7px;
 }
 
 #under {
