@@ -95,7 +95,7 @@ var setIntervalStreamStatusWolfy = function () {
   setInterval(getStreamStatusWolfy, 60000);
 };
 
-var getStreamStatusJohnyytb = function () {
+var getStreamStatusChloe = function () {
   $.ajax({
     url: 'https://api.twitch.tv/helix/streams?user_id=77590767',
     type: 'GET',
@@ -105,18 +105,18 @@ var getStreamStatusJohnyytb = function () {
     success: function(result) {
       if (result.data.length > 0) {
         // display icon on air
-        $("#icon_online_johnyytb").css('display', 'block');
+        $("#icon_online_chloe").css('display', 'block');
       } else {
         // hide icon on air
-        $("#icon_online_johnyytb").css('display', 'none');
+        $("#icon_online_chloe").css('display', 'none');
       }
     }
   })
 }
 
-var setIntervalStreamStatusJohnyytb = function () {
-  getStreamStatusJohnyytb();
-  setInterval(getStreamStatusJohnyytb, 60000);
+var setIntervalStreamStatusChloe = function () {
+  getStreamStatusChloe();
+  setInterval(getStreamStatusChloe, 60000);
 };
 
 var getStreamStatusStreamerZone = function () {
@@ -143,9 +143,9 @@ var setIntervalStreamStatusStreamerZone = function () {
   setInterval(getStreamStatusStreamerZone, 60000);
 };
 
-var getStreamStatusUnicxorn = function () {
+var getStreamStatusChloeecstasy = function () {
   $.ajax({
-    url: 'https://api.twitch.tv/helix/streams?user_id=116943607',
+    url: 'https://api.twitch.tv/helix/streams?user_id=190916410',
     type: 'GET',
     headers: {
      'Client-ID': 'b649omcgoo7t8sak644ivy7z3stzfn'
@@ -153,18 +153,18 @@ var getStreamStatusUnicxorn = function () {
     success: function(result) {
       if (result.data.length > 0) {
         // display icon on air
-        $("#icon_online_unic").css('display', 'block');
+        $("#icon_online_Chloe").css('display', 'block');
       } else {
         // hide icon on air
-        $("#icon_online_unic").css('display', 'none');
+        $("#icon_online_Chloe").css('display', 'none');
       }
     }
   })
 }
 
-var setIntervalStreamStatusUnicxorn = function () {
-  getStreamStatusUnicxorn();
-  setInterval(getStreamStatusUnicxorn, 60000);
+var setIntervalStreamStatusChloeecstasy = function () {
+  getStreamStatusChloecstasy();
+  setInterval(getStreamStatusChloeecstasy, 60000);
 };
 
 var getStreamStatusMatruks = function () {
@@ -287,9 +287,9 @@ var setIntervalStreamStatusToshasama = function () {
   setInterval(getStreamStatusToshasama, 60000);
 };
 
-var getStreamStatusShaniah33 = function () {
+var getStreamStatusJoker = function () {
   $.ajax({
-    url: 'https://api.twitch.tv/helix/streams?user_id=193227142',
+    url: 'https://api.twitch.tv/helix/streams?user_id=103955980',
     type: 'GET',
     headers: {
      'Client-ID': 'b649omcgoo7t8sak644ivy7z3stzfn'
@@ -297,18 +297,18 @@ var getStreamStatusShaniah33 = function () {
     success: function(result) {
       if (result.data.length > 0) {
         // display icon on air
-        $("#icon_online_sha").css('display', 'block');
+        $("#icon_online_joker").css('display', 'block');
       } else {
         // hide icon on air
-        $("#icon_online_sha").css('display', 'none');
+        $("#icon_online_joker").css('display', 'none');
       }
     }
   })
 }
 
-var setIntervalStreamStatusShaniah33 = function () {
-  getStreamStatusShaniah33();
-  setInterval(getStreamStatusShaniah33, 60000);
+var setIntervalStreamStatusJoker = function () {
+  getStreamStatusJoker();
+  setInterval(getStreamStatusJoker, 60000);
 };
 
 var getStreamStatusBadgraff = function () {
@@ -396,8 +396,9 @@ $(document).ready(function () {
   setIntervalStreamStatusIaw300();
   setIntervalStreamStatusCrazyNightTv();
   setIntervalStreamStatusToshasama();
-  setIntervalStreamStatusShaniah33();
+  setIntervalStreamStatusJoker();
   setIntervalStreamStatusBadgraff();
+  setIntervalStreamStatusChloe();
   setIntervalStreamStatusErfang();
 });
 //FIN DE POINT ROUGE STREAM
@@ -510,11 +511,11 @@ function whyz() {
 function crazy() {
   document.getElementById("lediv").innerHTML = '<a id="bouton" onclick="lecteur();" onclick="plan()"><img id="pan14" src="./images/panneauthe.png"></img></a><iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=crazynighttv" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/crazynighttv/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe><img id="profil" src="./images/crazypres.png"></img><br/><div id="bouton1" style="color: white; font-family: impact;" onclick="lecteurleave();"></div><div id="right"/>';
 }
-function weexi() {
-  document.getElementById("lediv").innerHTML = '<a id="bouton" onclick="lecteur();" onclick="plan()"><img id="pan14" src="./images/panneauthe.png"></img></a><iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=generaleweexi" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/generaleweexi/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe><img id="profil" src="./images/weexiprespres.png"></img><br/><div id="bouton1" style="color: white; font-family: impact;" onclick="lecteurleave();"></div><div id="right"/>';
+function joker() {
+  document.getElementById("lediv").innerHTML = '<a id="bouton" onclick="lecteur();" onclick="plan()"><img id="pan14" src="./images/panneauthe.png"></img></a><iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=thejokertv" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/thejokertv/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe><img id="profil" src="./images/#.png"></img><br/><div id="bouton1" style="color: white; font-family: impact;" onclick="lecteurleave();"></div><div id="right"/>';
 }
-function sha() {
-  document.getElementById("lediv").innerHTML = '<a id="bouton" onclick="lecteur();" onclick="plan()"><img id="pan14" src="./images/panneauthe.png"></img></a><iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=shaniah33" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/shaniah33/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe><img id="profil" src="./images/shapres.png"></img><br/><div id="bouton1" style="color: white; font-family: impact;" onclick="lecteurleave();"></div><div id="right"/>';
+function chloe() {
+  document.getElementById("lediv").innerHTML = '<a id="bouton" onclick="lecteur();" onclick="plan()"><img id="pan14" src="./images/panneauthe.png"></img></a><iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=chloeecstasy" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/chloeecstasy/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe><img id="profil" src="./images/#.png"></img><br/><div id="bouton1" style="color: white; font-family: impact;" onclick="lecteurleave();"></div><div id="right"/>';
 }
 function bady() {
   document.getElementById("lediv").innerHTML = '<a id="bouton" onclick="lecteur();" onclick="plan()"><img id="pan14" src="./images/panneauthe.png"></img></a><iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=badgraff" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/badgraff/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe><img id="profil" src="./images/badypres.png"></img><br/><div id="bouton1" style="color: white; font-family: impact;" onclick="lecteurleave();"></div><div id="right"/>';
