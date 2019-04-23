@@ -335,9 +335,9 @@ var setIntervalStreamStatusBadgraff = function () {
   setInterval(getStreamStatusBadgraff, 60000);
 };
 
-var getStreamStatusTenjokie = function () {
+var getStreamStatusZertox = function () {
   $.ajax({
-    url: 'https://api.twitch.tv/helix/streams?user_id=106816336',
+    url: 'https://api.twitch.tv/helix/streams?user_id=172032932',
     type: 'GET',
     headers: {
      'Client-ID': 'b649omcgoo7t8sak644ivy7z3stzfn'
@@ -345,18 +345,18 @@ var getStreamStatusTenjokie = function () {
     success: function(result) {
       if (result.data.length > 0) {
         // display icon on air
-        $("#icon_online_tenjo").css('display', 'block');
+        $("#icon_online_zertox").css('display', 'block');
       } else {
         // hide icon on air
-        $("#icon_online_tenjo").css('display', 'none');
+        $("#icon_online_zertox").css('display', 'none');
       }
     }
   })
 }
 
-var setIntervalStreamStatusTenjokie = function () {
-  getStreamStatusTenjokie();
-  setInterval(getStreamStatusTenjokie, 60000);
+var setIntervalStreamStatusZertox = function () {
+  getStreamStatusZertox();
+  setInterval(getStreamStatusZertox, 60000);
 };
 
 var getStreamStatusInferno = function () {
@@ -391,7 +391,7 @@ $(document).ready(function () {
   setIntervalStreamStatusRazzmoon();
   setIntervalStreamStatusWhyz_Trap();
   setIntervalStreamStatusStreamerZone();
-  setIntervalStreamStatusTenjokie();
+  setIntervalStreamStatusZertox();
   setIntervalStreamStatusMatruks();
   setIntervalStreamStatusIaw300();
   setIntervalStreamStatusJigsaw();
@@ -523,8 +523,8 @@ function bady() {
 function tosha() {
   document.getElementById("lediv").innerHTML = '<a id="bouton" onclick="lecteur();" onclick="plan()"><img id="pan14" src="./images/panneauthe.png"></img></a><iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=toshasama" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/toshasama/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe><img id="profil" src="./images/x.png"></img><br/><div id="bouton1" style="color: white; font-family: impact;" onclick="lecteurleave();"></div><div id="right"/>';
 }
-function tenjo() {
-  document.getElementById("lediv").innerHTML = '<a id="bouton" onclick="lecteur();" onclick="plan()"><img id="pan14" src="./images/panneauthe.png"></img></a><iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=tenjokiegaming" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/tenjokiegaming/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe><img id="profil" src="./images/x.png"></img><br/><div id="bouton1" style="color: white; font-family: impact;" onclick="lecteurleave();"></div><div id="right"/>';
+function zertox() {
+  document.getElementById("lediv").innerHTML = '<a id="bouton" onclick="lecteur();" onclick="plan()"><img id="pan14" src="./images/panneauthe.png"></img></a><iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=zertox80" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/zertox80/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe><img id="profil" src="./images/x.png"></img><br/><div id="bouton1" style="color: white; font-family: impact;" onclick="lecteurleave();"></div><div id="right"/>';
 }
 function razzmoon() {
   document.getElementById("lediv").innerHTML = '<a id="bouton" onclick="lecteur();" onclick="plan()"><img id="pan14" src="./images/panneauthe.png"></img></a><iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=razzmoon" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/razzmoon/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe><img id="profil" src="./images/x.png"></img><br/><div id="bouton1" style="color: white; font-family: impact;" onclick="lecteurleave();"></div><div id="right"/>';
