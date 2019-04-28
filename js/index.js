@@ -215,9 +215,9 @@ var setIntervalStreamStatusIaw300 = function () {
   setInterval(getStreamStatusIaw300, 60000);
 };
 
-var getStreamStatusWhyz_Trap = function () {
+var getStreamStatusSokkersan = function () {
   $.ajax({
-    url: 'https://api.twitch.tv/helix/streams?user_id=114145196',
+    url: 'https://api.twitch.tv/helix/streams?user_id=196887786',
     type: 'GET',
     headers: {
      'Client-ID': 'b649omcgoo7t8sak644ivy7z3stzfn'
@@ -225,18 +225,18 @@ var getStreamStatusWhyz_Trap = function () {
     success: function(result) {
       if (result.data.length > 0) {
         // display icon on air
-        $("#icon_online_whyz").css('display', 'block');
+        $("#icon_online_sokkersan").css('display', 'block');
       } else {
         // hide icon on air
-        $("#icon_online_whyz").css('display', 'none');
+        $("#icon_online_sokkersan").css('display', 'none');
       }
     }
   })
 }
 
-var setIntervalStreamStatusWhyz_Trap = function () {
+var setIntervalStreamStatusSokkersan = function () {
   getStreamStatusWhyz_Trap();
-  setInterval(getStreamStatusWhyz_Trap, 60000);
+  setInterval(getStreamStatusSokkersan, 60000);
 };
 
 var getStreamStatusJigsaw = function () {
@@ -389,7 +389,7 @@ $(document).ready(function () {
   setIntervalStreamStatusFrokan();
   setIntervalStreamStatusNmixslash();
   setIntervalStreamStatusRazzmoon();
-  setIntervalStreamStatusWhyz_Trap();
+  setIntervalStreamStatusSokkersan();
   setIntervalStreamStatusStreamerZone();
   setIntervalStreamStatusZertox();
   setIntervalStreamStatusMatruks();
