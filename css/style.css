@@ -29,13 +29,16 @@ body {
 }
 
 .header-left-side {
+  float: left;
   display: inline-block;
   color: white;
+  margin-left: 22vw;
 }
 
 .header-right-side {
-  float: right;
+  float: left;
   padding-right: 50px;
+  margin-left: 2vw;
 }
 
 .header-link {
@@ -156,7 +159,7 @@ body {
 
 .stream-zone {
   margin-right: auto;
-  margin-left: 16.45vw;
+  margin-left: 20vw;
   margin-top: 4.6vw;
   width: 1328px;
 }
@@ -178,7 +181,7 @@ body {
 }
 
 /* On Air icons */
-#icon_online_alkor, #icon_online_matruks, #icon_online_joker, #icon_online_sokkersan, #icon_online_frokan, #icon_online_law, #icon_online_zertox, #icon_online_streamerzone, #icon_online_crazy, #icon_online_tosha, #icon_online_sha, #icon_online_bady, #icon_online_wolfy, #icon_online_erfang, #icon_online_Chloe {
+#icon_online_alkor, #icon_online_matruks, #icon_online_joker, #icon_online_sokkersan, #icon_online_frokan, #icon_online_law, #icon_online_zertox, #icon_online_streamerzone, #icon_online_crazy, #icon_online_tosha, #icon_online_sha, #icon_online_bady, #icon_online_wolfy, #icon_online_max, #icon_online_Chloe {
   height: 20px;
   width: 20px;
   background-color: red;
@@ -330,7 +333,7 @@ body {
 #pan2, #pan21, #pan22 {
   height: 3vw;
   width: 3vw;
-  margin-top: 3vw;
+  margin-top: 0px;
   transition-duration: 0.25s;
   position: static;
 }
@@ -342,11 +345,13 @@ body {
 }
 
 #right {
-  height: 26.2vw;
+  height: 3vw;
   width: 10vw;
-  float: right;
   position: absolute;
-  bottom: 0px; margin-top: 8.5vw; left: 74.2vw;top: 0px;
+  bottom: 0px;
+  margin-top: 35.6vw;
+  left: 68vw;
+  top: 0px;
 }
 /*FIN BOUTON DROITE*/
 
@@ -376,14 +381,15 @@ body {
   width: 11vw; height: 26.035vw;
   margin-left: 4px
 }
+
 #sombre {
   margin-top: 5.5vw;
   position: absolute;
-  margin-left: 70.8vw;
+  margin-left: 74vw;
 }
 
 #sombreq {
-  margin-left: 70.8vw;
+  margin-left: 74vw;
   margin-top: 5.5vw;
   display: none;
   position: absolute;
@@ -470,3 +476,172 @@ body {
   width: 9vw; border-radius: 4px; border-color: black;
   height: 1.5vw; background-color: #983737; font-family: 'Roboto', sans-serif;
 }
+
+#team {
+  margin-left: 5vw;
+}
+
+#grade {
+  position: fixed;
+  color: white;
+  float: left;
+  font-size: 30px;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin-left: 75px; margin-top: 250px;
+}
+
+#streamer-g {
+  position: fixed;
+  color: white;
+  float: left;
+  font-size: 30px;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin-left: 60px; margin-top: 250px;
+}
+
+#logo3 {
+  margin-top: 2vw;
+  margin-left: 16vw;
+  float: left;
+  height: 30vw;
+  width: 25vw;
+}
+
+#logo3:hover {
+  margin-top: 2vw;
+  margin-left: 16vw;
+  float: left;
+  height: 30vw;
+  width: 25vw;
+  border: 1px #983737;
+}
+
+#text3 {
+  float: left;
+  height: 30vw;
+  width: 50vw;
+  color: white;
+  font-size: 24px;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin-top: 11vw;
+}
+
+#place3 {
+  position: absolute;
+  float: left;
+  margin-top: 2vw;
+  margin-left: 42vw;
+  float: left;
+  height: 30vw;
+  width: 50vw;
+  background-color: #983737;
+}
+
+
+
+#logos4 {
+  height: 300px; width: 230px;
+  border-radius: 50px;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  -webkit-transition: all 0.75s;
+  transition: all 0.25s;
+  margin-right: 30px;
+  display: inline-block;
+  float: left;
+}
+
+#logos4:hover {
+  height: 300px; width: 230px;
+  border-radius: 30px;
+  border-width: 2px; border-color: white;
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  -webkit-transition: all 0.25s;
+  transition: all 0.75s;
+}
+
+/*panneau droit*/
+#right-side{
+  float: right;
+  margin-right: 0px; right: 0px;
+  height: 16vw;
+  width: 4vw;
+  margin-top: 12vw;
+}
+
+#twitter-click{
+  height: 4vw; width: 4vw;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  top: 0px;
+  bottom: 0px;
+  position: relative;
+}
+
+#link-twitter{
+  height: 4vw; width: 4vw;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  top: 0px;
+  bottom: 0px;
+}
+
+#youtube-click{
+  height: 4vw; width: 4vw;
+  margin-top: -4px;
+  margin-bottom: 0px;
+  top: 0px;
+  bottom: 0px;
+  position: relative
+}
+
+#link-youtube{
+  height: 4vw; width: 4vw;
+  margin-top: -4px;
+  margin-bottom: 0px;
+  top: 0px;
+  bottom: 0px;
+}
+
+#twitch-click{
+  height: 4vw; width: 4vw;
+  margin-top: -3px;
+  margin-bottom: 0px;
+  top: 0px;
+  bottom: 0px;
+  position: relative;
+}
+
+#link-twitch{
+  height: 4vw; width: 4vw;
+  margin-top: -3px;
+  margin-bottom: 0px;
+  top: 0px;
+  bottom: 0px;
+}
+
+#facebook-click{
+  height: 4vw; width: 4vw;
+  margin-top: -3px;
+  margin-bottom: 0px;
+  top: 0px;
+  bottom: 0px;
+  position: relative;
+}
+
+#link-facebook{
+  height: 4vw; width: 4vw;
+  margin-top: -3px;
+  margin-bottom: 0px;
+  top: 0px;
+  bottom: 0px;
+}
+
+/*Fin PANNEAU DROIT*/
