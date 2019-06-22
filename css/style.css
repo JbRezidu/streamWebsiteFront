@@ -42,8 +42,7 @@ body {
 }
 
 .header-link {
-  display: inline-block;
-  font-size: 25px;
+  display: inline-block;font-size: 1.4vw;
   font-family: 'Roboto', sans-serif;
   margin-top: 0.782vw;
   margin-bottom: 10px;
