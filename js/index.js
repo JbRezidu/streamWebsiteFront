@@ -558,6 +558,10 @@ function partners() {
 function discord() {
   setInterval(window.open("https://discord.gg/qchzRDq"), 800);
 }
+
+function discordt() {
+  setInterval(window.open("https://discord.gg/qchzRDq"), 800);
+}
 //FIN BOUTONS ACCEUIL
 
 //SECTION PLANNING
