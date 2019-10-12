@@ -71,28 +71,28 @@ var setIntervalStreamStatusNmixslash = function () {
   setInterval(getStreamStatusNmixslash, 60000);
 };
 
-var getStreamStatusMax = function () {
+var getStreamStatusJokolead = function () {
   $.ajax({
-    url: 'https://api.twitch.tv/helix/streams?user_id=99602524',
+    url: 'https://api.twitch.tv/helix/streams?user_id=429026267',
     type: 'GET',
     headers: {
-     'Client-ID': 'b649omcgoo7t8sak644ivy7z3stzfn'
+     'Client-ID': 'vpg0itexbryh0n3iucm4k27swjht7i'
     },
     success: function(result) {
       if (result.data.length > 0) {
         // display icon on air
-        $("#icon_online_max").css('display', 'block');
+        $("#icon_online_joko").css('display', 'block');
       } else {
         // hide icon on air
-        $("#icon_online_Max").css('display', 'none');
+        $("#icon_online_joko").css('display', 'none');
       }
     }
   })
 }
 
-var setIntervalStreamStatusMax = function () {
-  getStreamStatusMax();
-  setInterval(getStreamStatusMax, 60000);
+var setIntervalStreamStatusJokolead = function () {
+  getStreamStatusJokolead();
+  setInterval(getStreamStatusJokolead, 60000);
 };
 
 var getStreamStatusChloe = function () {
@@ -167,28 +167,28 @@ var setIntervalStreamStatusChloeecstasy = function () {
   setInterval(getStreamStatusChloeecstasy, 60000);
 };
 
-var getStreamStatusMatruks = function () {
+var getStreamStatusAratrex = function () {
   $.ajax({
-    url: 'https://api.twitch.tv/helix/streams?user_id=55371642',
+    url: 'https://api.twitch.tv/helix/streams?user_id=131839045',
     type: 'GET',
     headers: {
-     'Client-ID': 'b649omcgoo7t8sak644ivy7z3stzfn'
+     'Client-ID': 'vpg0itexbryh0n3iucm4k27swjht7i'
     },
     success: function(result) {
       if (result.data.length > 0) {
         // display icon on air
-        $("#icon_online_matruks").css('display', 'block');
+        $("#icon_online_aratrex").css('display', 'block');
       } else {
         // hide icon on air
-        $("#icon_online_matruks").css('display', 'none');
+        $("#icon_online_aratrex").css('display', 'none');
       }
     }
   })
 }
 
-var setIntervalStreamStatusMatruks = function () {
-  getStreamStatusMatruks();
-  setInterval(getStreamStatusMatruks, 60000);
+var setIntervalStreamStatusAratrex = function () {
+  getStreamStatusAratrex();
+  setInterval(getStreamStatusAratrex, 60000);
 };
 
 var getStreamStatusIaw300 = function () {
@@ -215,28 +215,28 @@ var setIntervalStreamStatusIaw300 = function () {
   setInterval(getStreamStatusIaw300, 60000);
 };
 
-var getStreamStatusSokkersan = function () {
+var getStreamStatusMazeen = function () {
   $.ajax({
-    url: 'https://api.twitch.tv/helix/streams?user_id=196887786',
+    url: 'https://api.twitch.tv/helix/streams?user_id=406191799',
     type: 'GET',
     headers: {
-     'Client-ID': 'b649omcgoo7t8sak644ivy7z3stzfn'
+     'Client-ID': 'vpg0itexbryh0n3iucm4k27swjht7i'
     },
     success: function(result) {
       if (result.data.length > 0) {
         // display icon on air
-        $("#icon_online_sokkersan").css('display', 'block');
+        $("#icon_online_mazeen").css('display', 'block');
       } else {
         // hide icon on air
-        $("#icon_online_sokkersan").css('display', 'none');
+        $("#icon_online_mazeen").css('display', 'none');
       }
     }
   })
 }
 
-var setIntervalStreamStatusSokkersan = function () {
-  getStreamStatusSokkersan();
-  setInterval(getStreamStatusSokkersan, 60000);
+var setIntervalStreamStatusMazeen = function () {
+  getStreamStatusMazeen();
+  setInterval(getStreamStatusMazeen, 60000);
 };
 
 var getStreamStatusKhnor = function () {
@@ -359,9 +359,9 @@ var setIntervalStreamStatusZertox = function () {
   setInterval(getStreamStatusZertox, 60000);
 };
 
-var getStreamStatusInferno = function () {
+var getStreamStatusMemsgringo = function () {
   $.ajax({
-    url: 'https://api.twitch.tv/helix/streams?user_id=246239260',
+    url: 'https://api.twitch.tv/helix/streams?user_id=180639359',
     type: 'GET',
     headers: {
      'Client-ID': 'b649omcgoo7t8sak644ivy7z3stzfn'
@@ -369,18 +369,18 @@ var getStreamStatusInferno = function () {
     success: function(result) {
       if (result.data.length > 0) {
         // display icon on air
-        $("#icon_online_inferno").css('display', 'block');
+        $("#icon_online_mems").css('display', 'block');
       } else {
         // hide icon on air
-        $("#icon_online_inferno").css('display', 'none');
+        $("#icon_online_mems").css('display', 'none');
       }
     }
   })
 }
 
-var setIntervalStreamStatusInferno = function () {
-  getStreamStatusInferno();
-  setInterval(getStreamStatusInferno, 60000);
+var setIntervalStreamStatusMemsgringo = function () {
+  getStreamStatusMemsgringo();
+  setInterval(getStreamStatusMemsgringo, 60000);
 };
 
 
@@ -389,17 +389,17 @@ $(document).ready(function () {
   setIntervalStreamStatusFrokan();
   setIntervalStreamStatusNmixslash();
   setIntervalStreamStatusMax();
-  setIntervalStreamStatusSokkersan();
+  setIntervalStreamStatusMazeen();
   setIntervalStreamStatusStreamerZone();
   setIntervalStreamStatusZertox();
-  setIntervalStreamStatusMatruks();
+  setIntervalStreamStatusAratrex();
   setIntervalStreamStatusIaw300();
   setIntervalStreamStatusKhnor();
   setIntervalStreamStatusToshasama();
   setIntervalStreamStatusJoker();
   setIntervalStreamStatusBadgraff();
   setIntervalStreamStatusChloe();
-  setIntervalStreamStatusInferno();
+  setIntervalStreamStatusMemsgringo();
 });
 //FIN DE POINT ROUGE STREAM
 
@@ -495,11 +495,11 @@ function alkor() {
 function nmix() {
   document.getElementById("lediv").innerHTML = '<a id="bouton" onclick="lecteur();" onclick="plan()"><img id="pan14" src="./images/panneauthe.png"></img></a><iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=nmixslash98" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/nmixslash98/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe><br/><div id="bouton1" style="color: white; font-family: impact;" onclick="lecteurleave();"></div><div id="right"/>';
 }
-function hyo() {
-  document.getElementById("lediv").innerHTML = '<a id="bouton" onclick="lecteur();" onclick="plan()"><img id="pan14" src="./images/panneauthe.png"></img></a><iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=hyoshee" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/hyoshee/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe><br/><div id="bouton1" style="color: white; font-family: impact;" onclick="lecteurleave();"></div><div id="right"/>';
+function mems() {
+  document.getElementById("lediv").innerHTML = '<a id="bouton" onclick="lecteur();" onclick="plan()"><img id="pan14" src="./images/panneauthe.png"></img></a><iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=memsgringo" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/memsgringo/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe><br/><div id="bouton1" style="color: white; font-family: impact;" onclick="lecteurleave();"></div><div id="right"/>';
 }
-function matruks() {
-  document.getElementById("lediv").innerHTML = '<a id="bouton" onclick="lecteur();" onclick="plan()"><img id="pan14" src="./images/panneauthe.png"></img></a><iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=matruks" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/matruks/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe><br/><div id="bouton1" style="color: white; font-family: impact;" onclick="lecteurleave();"></div><div id="right"/>';
+function aratrex() {
+  document.getElementById("lediv").innerHTML = '<a id="bouton" onclick="lecteur();" onclick="plan()"><img id="pan14" src="./images/panneauthe.png"></img></a><iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=thearatrex" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/thearatrex/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe><br/><div id="bouton1" style="color: white; font-family: impact;" onclick="lecteurleave();"></div><div id="right"/>';
 }
 function unic() {
   document.getElementById("lediv").innerHTML = '<a id="bouton" onclick="lecteur();" onclick="plan()"><img id="pan14" src="./images/panneauthe.png"></img></a><iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=unicxorn" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/unicxorn/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe><br/><div id="bouton1" style="color: white; font-family: impact;" onclick="lecteurleave();"></div><div id="right"/>';
@@ -528,11 +528,11 @@ function tosha() {
 function zertox() {
   document.getElementById("lediv").innerHTML = '<a id="bouton" onclick="lecteur();" onclick="plan()"><img id="pan14" src="./images/panneauthe.png"></img></a><iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=zertox80" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/zertox80/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe><br/><div id="bouton1" style="color: white; font-family: impact;" onclick="lecteurleave();"></div><div id="right"/>';
 }
-function max() {
-  document.getElementById("lediv").innerHTML = '<a id="bouton" onclick="lecteur();" onclick="plan()"><img id="pan14" src="./images/panneauthe.png"></img></a><iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=maxbeermax" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/maxbeermax/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe><br/><div id="bouton1" style="color: white; font-family: impact;" onclick="lecteurleave();"></div><div id="right"/>';
+function joko() {
+  document.getElementById("lediv").innerHTML = '<a id="bouton" onclick="lecteur();" onclick="plan()"><img id="pan14" src="./images/panneauthe.png"></img></a><iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=jokolead" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/jokolead/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe><br/><div id="bouton1" style="color: white; font-family: impact;" onclick="lecteurleave();"></div><div id="right"/>';
 }
-function sokkersan() {
-  document.getElementById("lediv").innerHTML = '<a id="bouton" onclick="lecteur();" onclick="plan()"><img id="pan14" src="./images/panneauthe.png"></img></a><iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=sokkersantv" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/sokkersantv/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe><br/><div id="bouton1" style="color: white; font-family: impact;" onclick="lecteurleave();"></div><div id="right"/>';
+function mazeen() {
+  document.getElementById("lediv").innerHTML = '<a id="bouton" onclick="lecteur();" onclick="plan()"><img id="pan14" src="./images/panneauthe.png"></img></a><iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=mazeen" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/mazeen/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe><br/><div id="bouton1" style="color: white; font-family: impact;" onclick="lecteurleave();"></div><div id="right"/>';
 }
 function bdg() {
   document.getElementById("lediv").innerHTML = '<iframe id="lecteur1" class="lectwitch" src="https://player.twitch.tv/?channel=lebistrodesgamers" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="750"></iframe> <iframe id="chat" src="https://www.twitch.tv/embed/lebistrodesgamers/chat" scrolling="no" width="350" height="500" frameborder="0"></iframe><div id="right"><a href="https://www.tipeeestream.com/lebistrodesgamers/donation" target="_Blank"><img id="pan1" src="./images/panneaudon.png"/></a><a onclick="plan()" target="_Blank"><img id="pan22" src="./images/panneauplan.png"></a><a id="bouton" onclick="lecteurt()" target="_Blank"><img id="pan13" src="./images/panneauthe.png"></a></div><div id="bouton1" style="color: white; font-family: impact;" onclick="lecteurleavet();"></div>';
@@ -567,7 +567,7 @@ function discordt() {
 //SECTION PLANNING
 var quitter = document.getElementById("plann", "logos2", "qlick", "right");
 function plan() {
-  document.getElementById("plann").innerHTML = '<iframe id="plan" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRMj1HgkKsdkFmbLfx44XY_OmlV49iw4KnTq37dadddzqOSVxicSWKH5TMCi094OQHSXlfF1oEXu-Km/pubhtml?gid=1743127860&amp;single=true&amp;widget=true&amp;headers=false" scrolling="no" style="height: 41vw; width: 94.8vw; float: center; position: absolute; margin-left: 3vw;"></iframe><button id="qlick" onclick="quit()">X</p>'
+  document.getElementById("plann").innerHTML = '<iframe id="plan" src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;bgcolor=%23973838&amp;ctz=Europe%2FParis&amp;src=c2JoMW52bGVsNzYzYmw1a2ZibXV1cDNwb29AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=OGo3MmltZTFtZTUwamthN2U4YWgzbjM1aXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%238E24AA&amp;color=%233F51B5&amp;showTitle=0&amp;showNav=1&amp;showDate=1&amp;showPrint=1&amp;showTabs=1&amp;showCalendars=0&amp;showTz=0&amp;mode=WEEK" scrolling="no" style="height: 41vw; width: 94.8vw; float: center; position: absolute; margin-left: 3vw;"></iframe><button id="qlick" onclick="quit()">X</p>'
   plann.style.display = "block";
   qlick.style.display = "block";
   logos2.style.display = "none";
